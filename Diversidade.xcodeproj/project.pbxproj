@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90686E1C776D00008CF631 /* SWRevealViewController.m */; };
 		0BD3F6E01C77443900FAFFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */; };
 		0BD3F6E21C77443900FAFFD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6E11C77443900FAFFD9 /* ViewController.swift */; };
 		0BD3F6E51C77443900FAFFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3F6E31C77443900FAFFD9 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B90686C1C776CFF008CF631 /* Diversidade-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diversidade-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B90686D1C776D00008CF631 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0B90686E1C776D00008CF631 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		0BD3F6DC1C77443900FAFFD9 /* Diversidade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diversidade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD3F6E11C77443900FAFFD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B90686B1C776CDC008CF631 /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				0B90686D1C776D00008CF631 /* SWRevealViewController.h */,
+				0B90686E1C776D00008CF631 /* SWRevealViewController.m */,
+				0B90686C1C776CFF008CF631 /* Diversidade-Bridging-Header.h */,
+			);
+			name = SWReveal;
+			sourceTree = "<group>";
+		};
 		0BD3F6D31C77443900FAFFD9 = {
 			isa = PBXGroup;
 			children = (
+				0B90686B1C776CDC008CF631 /* SWReveal */,
 				0BD3F6DE1C77443900FAFFD9 /* Diversidade */,
 				0BD3F6F61C77443900FAFFD9 /* DiversidadeTests */,
 				0BD3F7011C77443A00FAFFD9 /* DiversidadeUITests */,
@@ -262,6 +277,7 @@
 				0BD3F6E81C77443900FAFFD9 /* Diversidade.xcdatamodeld in Sources */,
 				0BD3F6E21C77443900FAFFD9 /* ViewController.swift in Sources */,
 				0BD3F6E01C77443900FAFFD9 /* AppDelegate.swift in Sources */,
+				0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,12 +417,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Diversidade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.francisceioseph.Diversidade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Diversidade-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -414,12 +433,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Diversidade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.francisceioseph.Diversidade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Diversidade-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -490,6 +511,7 @@
 				0BD3F7091C77443A00FAFFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD3F70A1C77443A00FAFFD9 /* Build configuration list for PBXNativeTarget "DiversidadeTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +520,7 @@
 				0BD3F70C1C77443A00FAFFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD3F70D1C77443A00FAFFD9 /* Build configuration list for PBXNativeTarget "DiversidadeUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				0BD3F70F1C77443A00FAFFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
