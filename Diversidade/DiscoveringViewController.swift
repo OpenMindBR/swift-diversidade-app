@@ -14,6 +14,7 @@ class DiscoveringViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configureSideMenu(self.menuItem)
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,10 +10,10 @@ import UIKit
 
 class HealthViewController: UIViewController {
 
+    @IBOutlet weak var menuItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.configureSideMenu(self.menuItem)
     }
 
     override func didReceiveMemoryWarning() {

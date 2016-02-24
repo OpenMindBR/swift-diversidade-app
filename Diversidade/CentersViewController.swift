@@ -14,12 +14,7 @@ class CentersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let revealController = self.revealViewController(){
-            menuItem.target = revealController
-            menuItem.action = "revealToggle:"
-            self.view.addGestureRecognizer(revealController.panGestureRecognizer())
-        }
+        self.configureSideMenu(self.menuItem)
     }
 
     override func didReceiveMemoryWarning() {
