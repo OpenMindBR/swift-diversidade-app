@@ -13,8 +13,8 @@ extension UIViewController {
         if let revealController = self.revealViewController(){
             menuButton.target = revealController
             menuButton.action = "revealToggle:"
+            
             self.view.addGestureRecognizer(revealController.panGestureRecognizer())
         }
-
     }
 }
