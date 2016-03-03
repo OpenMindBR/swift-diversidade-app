@@ -8,9 +8,12 @@
 
 import UIKit
 
-class RightsViewController: UIViewController {
+class RightsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuItem: UIBarButtonItem!
+    
+    var datasource:[Post]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +22,35 @@ class RightsViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var rows = 0
+        
+        if let datasource = self.datasource {
+            rows =  datasource.count
+        }
+        
+        return rows
+    }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("post_cell") as! PostTableViewCell
+        
+        if let datasource = self.datasource {
+            let content = datasource[indexPath.row]
+            
+            cell.titleLabel.text = content.title
+            cell.dateLabel.text  = content.date
+            cell.postTextLabel.text = content.text
+        }
+        
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 

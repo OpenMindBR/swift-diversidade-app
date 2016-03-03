@@ -15,6 +15,8 @@
 		0B8AF4341C7DDE7B00068F83 /* RightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42E1C7DDE7B00068F83 /* RightsViewController.swift */; };
 		0B8AF4351C7DDE7B00068F83 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42F1C7DDE7B00068F83 /* SuggestionsViewController.swift */; };
 		0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90686E1C776D00008CF631 /* SWRevealViewController.m */; };
+		0B94E6351C88A30F00DDD703 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B94E6341C88A30F00DDD703 /* Post.swift */; };
+		0BA893331C8881DE00F547E3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA893321C8881DE00F547E3 /* PostTableViewCell.swift */; };
 		0BD3F6E01C77443900FAFFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */; };
 		0BD3F6E51C77443900FAFFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3F6E31C77443900FAFFD9 /* Main.storyboard */; };
 		0BD3F6E81C77443900FAFFD9 /* Diversidade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6E61C77443900FAFFD9 /* Diversidade.xcdatamodeld */; };
@@ -52,6 +54,8 @@
 		0B90686C1C776CFF008CF631 /* Diversidade-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diversidade-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B90686D1C776D00008CF631 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0B90686E1C776D00008CF631 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0B94E6341C88A30F00DDD703 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0BA893321C8881DE00F547E3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		0BD3F6DC1C77443900FAFFD9 /* Diversidade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diversidade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD3F6E41C77443900FAFFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +120,22 @@
 			name = SWReveal;
 			sourceTree = "<group>";
 		};
+		0B94E6331C88A2C900DDD703 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0B94E6341C88A30F00DDD703 /* Post.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		0BA893311C8881B700F547E3 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				0BA893321C8881DE00F547E3 /* PostTableViewCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
 		0BD3F6D31C77443900FAFFD9 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +160,8 @@
 		0BD3F6DE1C77443900FAFFD9 /* Diversidade */ = {
 			isa = PBXGroup;
 			children = (
+				0B94E6331C88A2C900DDD703 /* model */,
+				0BA893311C8881B700F547E3 /* cells */,
 				0B8AF4231C7DDAA200068F83 /* controllers */,
 				0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */,
 				0BD3F6E31C77443900FAFFD9 /* Main.storyboard */,
@@ -300,8 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA893331C8881DE00F547E3 /* PostTableViewCell.swift in Sources */,
 				0B8AF4311C7DDE7B00068F83 /* CentersViewController.swift in Sources */,
 				0B8AF4331C7DDE7B00068F83 /* HealthViewController.swift in Sources */,
+				0B94E6351C88A30F00DDD703 /* Post.swift in Sources */,
 				0B8AF4301C7DDE7B00068F83 /* AboutViewController.swift in Sources */,
 				0B8AF4341C7DDE7B00068F83 /* RightsViewController.swift in Sources */,
 				0BD3F6E81C77443900FAFFD9 /* Diversidade.xcdatamodeld in Sources */,
