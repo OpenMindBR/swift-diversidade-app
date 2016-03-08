@@ -15,6 +15,9 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
     var datasource:[Post]?
     
     override func viewDidLoad() {
+        let post = Post(category: "Health", title: "Some long long title here", date: "22/22/22", text: "www.google.com")
+        datasource = [post]
+        
         super.viewDidLoad()
         self.configureSideMenu(self.menuItem)
     }
@@ -25,7 +28,7 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var rows = 0
+        var rows = 1
         
         if let datasource = self.datasource {
             rows =  datasource.count
@@ -36,6 +39,7 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("post_cell") as! PostTableViewCell
