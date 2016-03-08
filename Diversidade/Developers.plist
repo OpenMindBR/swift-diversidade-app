@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>André Coelho</string>
+		<key>facebookLink</key>
+		<string>https://www.facebook.com/andrecoelho03</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Francisco Souza</string>
+		<key>facebookLink</key>
+		<string>https://www.facebook.com/franciscojose.araujo2</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Joamila Brito</string>
+		<key>facebookLink</key>
+		<string>https://www.facebook.com/joamilab</string>
+	</dict>
+</array>
+</plist>

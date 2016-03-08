@@ -25,6 +25,7 @@
 		0BD3F6ED1C77443900FAFFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3F6EB1C77443900FAFFD9 /* LaunchScreen.storyboard */; };
 		0BD3F6F81C77443900FAFFD9 /* DiversidadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6F71C77443900FAFFD9 /* DiversidadeTests.swift */; };
 		0BD3F7031C77443A00FAFFD9 /* DiversidadeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F7021C77443A00FAFFD9 /* DiversidadeUITests.swift */; };
+		0BE767951C8F4E3D0013843B /* Developers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BE767941C8F4E3D0013843B /* Developers.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		0BD3F6FE1C77443A00FAFFD9 /* DiversidadeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiversidadeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3F7021C77443A00FAFFD9 /* DiversidadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiversidadeUITests.swift; sourceTree = "<group>"; };
 		0BD3F7041C77443A00FAFFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE767941C8F4E3D0013843B /* Developers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Developers.plist; sourceTree = "<group>"; };
 		7E6AFD409D3A8A82806BD8C7 /* Pods-Diversidade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diversidade.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade.release.xcconfig"; sourceTree = "<group>"; };
 		CD3C8AA115A9FA4F10AB6A12 /* libPods-Diversidade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diversidade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */,
+				0BE767941C8F4E3D0013843B /* Developers.plist */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				0BD3F6ED1C77443900FAFFD9 /* LaunchScreen.storyboard in Resources */,
 				0BD3F6EA1C77443900FAFFD9 /* Assets.xcassets in Resources */,
 				0BD3F6E51C77443900FAFFD9 /* Main.storyboard in Resources */,
+				0BE767951C8F4E3D0013843B /* Developers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
