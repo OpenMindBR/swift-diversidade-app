@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21E79780BC2277103B1237816718D9B7 /* KILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E2DFD93FE3ED4BFCFF5ADC1A18CB5 /* KILabel.m */; };
+		25A241BBAD4C411A70BCA8C07370A287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		7BD5A2518B8D255B190A1620CB90B42B /* KILabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE67E8292CDCC6179E7AFACD2A5A2408 /* KILabel-dummy.m */; };
+		B827E1D8047701C75EDE3DF58B7A74E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		BD5BB57C14CDB08819ED2F2F831968B2 /* KILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = AACEE8DB4F6B2679FDEC051B99958073 /* KILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D88F4EA37A137CF184B6D52C4FB9D99B /* Pods-Diversidade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7270F07E148826467AB6E792C5D72A0 /* Pods-Diversidade-dummy.m */; };
+		D9A8964CD6AF30AC8D2E175AFF44CE95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59308F5338D6D383559E52486F42A23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A719DC9F50CC08874A1E4FC57D148162;
+			remoteInfo = KILabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C5C611FDABB3282481906A85EAD39E /* Pods-Diversidade-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Diversidade-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B44CE3CF52EF8805E2B6332E277B98D /* libPods-Diversidade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diversidade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AFC1BAF4BC1FDADDFFBBC96BCAC5AE0 /* KILabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KILabel-prefix.pch"; sourceTree = "<group>"; };
+		5633DF4EB6FB0DB3F2AAFBA9D730FCA7 /* Pods-Diversidade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diversidade.debug.xcconfig"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		712D9CB515F8324DDF5F7D62916ADF06 /* Pods-Diversidade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diversidade.release.xcconfig"; sourceTree = "<group>"; };
+		7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KILabel.xcconfig; sourceTree = "<group>"; };
+		999D0D72C61699A172DEBFDAF2663DF4 /* Pods-Diversidade-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Diversidade-resources.sh"; sourceTree = "<group>"; };
+		9B1E2DFD93FE3ED4BFCFF5ADC1A18CB5 /* KILabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KILabel.m; path = KILabel/Source/KILabel.m; sourceTree = "<group>"; };
+		9DA88BA2071BACC8AC2C7EBB07504241 /* Pods-Diversidade-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Diversidade-frameworks.sh"; sourceTree = "<group>"; };
+		AACEE8DB4F6B2679FDEC051B99958073 /* KILabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KILabel.h; path = KILabel/Source/KILabel.h; sourceTree = "<group>"; };
+		AE66847C71DC4D09779DADA6FC60309A /* libKILabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKILabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7270F07E148826467AB6E792C5D72A0 /* Pods-Diversidade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Diversidade-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE67E8292CDCC6179E7AFACD2A5A2408 /* KILabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KILabel-dummy.m"; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D8A2D7DD4E1FA50655305056A2EBC407 /* Pods-Diversidade-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Diversidade-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		443D7602E7A82258DF09E6B3514C9B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A8964CD6AF30AC8D2E175AFF44CE95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58AC9681EDECE96A09F59397005B17C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A241BBAD4C411A70BCA8C07370A287 /* Foundation.framework in Frameworks */,
+				B827E1D8047701C75EDE3DF58B7A74E5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E39D5A87DD94DE5B48830EBDD1E904 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */,
+				BE67E8292CDCC6179E7AFACD2A5A2408 /* KILabel-dummy.m */,
+				2AFC1BAF4BC1FDADDFFBBC96BCAC5AE0 /* KILabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KILabel";
+			sourceTree = "<group>";
+		};
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3F8A9C5F5A7179B8D2BF3DB844D91D40 /* KILabel */ = {
+			isa = PBXGroup;
+			children = (
+				AACEE8DB4F6B2679FDEC051B99958073 /* KILabel.h */,
+				9B1E2DFD93FE3ED4BFCFF5ADC1A18CB5 /* KILabel.m */,
+				03E39D5A87DD94DE5B48830EBDD1E904 /* Support Files */,
+			);
+			path = KILabel;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D26FB24B1F0FCD5B15A3E4323840A40A /* Pods */,
+				9DD0339EA157DADDF98A8C7232484BDB /* Products */,
+				F89F2BF24CBF7C251A9D591622D5023D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9DD0339EA157DADDF98A8C7232484BDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE66847C71DC4D09779DADA6FC60309A /* libKILabel.a */,
+				1B44CE3CF52EF8805E2B6332E277B98D /* libPods-Diversidade.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D26FB24B1F0FCD5B15A3E4323840A40A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A9C5F5A7179B8D2BF3DB844D91D40 /* KILabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDEF35F1D97CB6F590B8702F18D5FB10 /* Pods-Diversidade */ = {
+			isa = PBXGroup;
+			children = (
+				D8A2D7DD4E1FA50655305056A2EBC407 /* Pods-Diversidade-acknowledgements.markdown */,
+				03C5C611FDABB3282481906A85EAD39E /* Pods-Diversidade-acknowledgements.plist */,
+				B7270F07E148826467AB6E792C5D72A0 /* Pods-Diversidade-dummy.m */,
+				9DA88BA2071BACC8AC2C7EBB07504241 /* Pods-Diversidade-frameworks.sh */,
+				999D0D72C61699A172DEBFDAF2663DF4 /* Pods-Diversidade-resources.sh */,
+				5633DF4EB6FB0DB3F2AAFBA9D730FCA7 /* Pods-Diversidade.debug.xcconfig */,
+				712D9CB515F8324DDF5F7D62916ADF06 /* Pods-Diversidade.release.xcconfig */,
+			);
+			name = "Pods-Diversidade";
+			path = "Target Support Files/Pods-Diversidade";
+			sourceTree = "<group>";
+		};
+		F89F2BF24CBF7C251A9D591622D5023D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDEF35F1D97CB6F590B8702F18D5FB10 /* Pods-Diversidade */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0D00454FF8F384BC43EC41F902676FB4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5BB57C14CDB08819ED2F2F831968B2 /* KILabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A719DC9F50CC08874A1E4FC57D148162 /* KILabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D151E15D0F99FE7C5D177630637A902 /* Build configuration list for PBXNativeTarget "KILabel" */;
+			buildPhases = (
+				C1711E6019AD394455FF827C78B4E3BC /* Sources */,
+				D58AC9681EDECE96A09F59397005B17C /* Frameworks */,
+				0D00454FF8F384BC43EC41F902676FB4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KILabel;
+			productName = KILabel;
+			productReference = AE66847C71DC4D09779DADA6FC60309A /* libKILabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BEA7C6E06B728280833AF7245A29B346 /* Pods-Diversidade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C72F0064900E335F6B9432DB355D68 /* Build configuration list for PBXNativeTarget "Pods-Diversidade" */;
+			buildPhases = (
+				EBFCBB6B796C23AF88367C50C207635D /* Sources */,
+				443D7602E7A82258DF09E6B3514C9B50 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC32D096630244310AB99EFB937A43C7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Diversidade";
+			productName = "Pods-Diversidade";
+			productReference = 1B44CE3CF52EF8805E2B6332E277B98D /* libPods-Diversidade.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9DD0339EA157DADDF98A8C7232484BDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A719DC9F50CC08874A1E4FC57D148162 /* KILabel */,
+				BEA7C6E06B728280833AF7245A29B346 /* Pods-Diversidade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1711E6019AD394455FF827C78B4E3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD5A2518B8D255B190A1620CB90B42B /* KILabel-dummy.m in Sources */,
+				21E79780BC2277103B1237816718D9B7 /* KILabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFCBB6B796C23AF88367C50C207635D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88F4EA37A137CF184B6D52C4FB9D99B /* Pods-Diversidade-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC32D096630244310AB99EFB937A43C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KILabel;
+			target = A719DC9F50CC08874A1E4FC57D148162 /* KILabel */;
+			targetProxy = 59308F5338D6D383559E52486F42A23E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		298FE5323E6D53F82DE16BFFE73A2039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KILabel/KILabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8415B25A3E78B659F73525C483A662F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KILabel/KILabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C40A458326C549DBC84B5872FF7FBD90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5633DF4EB6FB0DB3F2AAFBA9D730FCA7 /* Pods-Diversidade.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4ED600E9B1CC1C2C650F16277E7979F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 712D9CB515F8324DDF5F7D62916ADF06 /* Pods-Diversidade.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C72F0064900E335F6B9432DB355D68 /* Build configuration list for PBXNativeTarget "Pods-Diversidade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40A458326C549DBC84B5872FF7FBD90 /* Debug */,
+				D4ED600E9B1CC1C2C650F16277E7979F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D151E15D0F99FE7C5D177630637A902 /* Build configuration list for PBXNativeTarget "KILabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8415B25A3E78B659F73525C483A662F /* Debug */,
+				298FE5323E6D53F82DE16BFFE73A2039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

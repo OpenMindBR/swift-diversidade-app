@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0320E34BC154ED38E899FF51 /* libPods-Diversidade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3C8AA115A9FA4F10AB6A12 /* libPods-Diversidade.a */; };
 		0B8AF4291C7DDBA400068F83 /* SideMenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */; };
 		0B8AF4301C7DDE7B00068F83 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42A1C7DDE7B00068F83 /* AboutViewController.swift */; };
 		0B8AF4311C7DDE7B00068F83 /* CentersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42B1C7DDE7B00068F83 /* CentersViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0188706D515E2771A83659A5 /* Pods-Diversidade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diversidade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade.debug.xcconfig"; sourceTree = "<group>"; };
 		0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuExtension.swift; sourceTree = "<group>"; };
 		0B8AF42A1C7DDE7B00068F83 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		0B8AF42B1C7DDE7B00068F83 /* CentersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentersViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,8 @@
 		0BD3F6FE1C77443A00FAFFD9 /* DiversidadeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiversidadeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3F7021C77443A00FAFFD9 /* DiversidadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiversidadeUITests.swift; sourceTree = "<group>"; };
 		0BD3F7041C77443A00FAFFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6AFD409D3A8A82806BD8C7 /* Pods-Diversidade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diversidade.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade.release.xcconfig"; sourceTree = "<group>"; };
+		CD3C8AA115A9FA4F10AB6A12 /* libPods-Diversidade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diversidade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0320E34BC154ED38E899FF51 /* libPods-Diversidade.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +110,6 @@
 				0B8AF42D1C7DDE7B00068F83 /* HealthViewController.swift */,
 				0B8AF42E1C7DDE7B00068F83 /* RightsViewController.swift */,
 				0B8AF42F1C7DDE7B00068F83 /* SuggestionsViewController.swift */,
-				0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -115,17 +119,16 @@
 			children = (
 				0B90686D1C776D00008CF631 /* SWRevealViewController.h */,
 				0B90686E1C776D00008CF631 /* SWRevealViewController.m */,
-				0B90686C1C776CFF008CF631 /* Diversidade-Bridging-Header.h */,
 			);
 			name = SWReveal;
 			sourceTree = "<group>";
 		};
-		0B94E6331C88A2C900DDD703 /* model */ = {
+		0B94E6331C88A2C900DDD703 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				0B94E6341C88A30F00DDD703 /* Post.swift */,
 			);
-			name = model;
+			name = models;
 			sourceTree = "<group>";
 		};
 		0BA893311C8881B700F547E3 /* cells */ = {
@@ -139,11 +142,14 @@
 		0BD3F6D31C77443900FAFFD9 = {
 			isa = PBXGroup;
 			children = (
+				0B90686C1C776CFF008CF631 /* Diversidade-Bridging-Header.h */,
 				0B90686B1C776CDC008CF631 /* SWReveal */,
 				0BD3F6DE1C77443900FAFFD9 /* Diversidade */,
 				0BD3F6F61C77443900FAFFD9 /* DiversidadeTests */,
 				0BD3F7011C77443A00FAFFD9 /* DiversidadeUITests */,
 				0BD3F6DD1C77443900FAFFD9 /* Products */,
+				194B2ED577807D891A6B000B /* Pods */,
+				28CBB582F0AD20E9701F8754 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,7 +166,8 @@
 		0BD3F6DE1C77443900FAFFD9 /* Diversidade */ = {
 			isa = PBXGroup;
 			children = (
-				0B94E6331C88A2C900DDD703 /* model */,
+				0BE767911C8F1B5A0013843B /* helpers */,
+				0B94E6331C88A2C900DDD703 /* models */,
 				0BA893311C8881B700F547E3 /* cells */,
 				0B8AF4231C7DDAA200068F83 /* controllers */,
 				0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */,
@@ -191,6 +198,31 @@
 			path = DiversidadeUITests;
 			sourceTree = "<group>";
 		};
+		0BE767911C8F1B5A0013843B /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		194B2ED577807D891A6B000B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0188706D515E2771A83659A5 /* Pods-Diversidade.debug.xcconfig */,
+				7E6AFD409D3A8A82806BD8C7 /* Pods-Diversidade.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		28CBB582F0AD20E9701F8754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C8AA115A9FA4F10AB6A12 /* libPods-Diversidade.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BD3F7071C77443A00FAFFD9 /* Build configuration list for PBXNativeTarget "Diversidade" */;
 			buildPhases = (
+				B86F24F881F9B1B172EA0759 /* Check Pods Manifest.lock */,
 				0BD3F6D81C77443900FAFFD9 /* Sources */,
 				0BD3F6D91C77443900FAFFD9 /* Frameworks */,
 				0BD3F6DA1C77443900FAFFD9 /* Resources */,
+				981A3EDF8637FB3A9B7E3EF7 /* Embed Pods Frameworks */,
+				2FEC055935A6EFC51B97E3BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,6 +351,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FEC055935A6EFC51B97E3BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		981A3EDF8637FB3A9B7E3EF7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B86F24F881F9B1B172EA0759 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BD3F6D81C77443900FAFFD9 /* Sources */ = {
@@ -471,12 +554,13 @@
 		};
 		0BD3F7081C77443A00FAFFD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0188706D515E2771A83659A5 /* Pods-Diversidade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Diversidade/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.francisceioseph.Diversidade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,12 +571,13 @@
 		};
 		0BD3F7091C77443A00FAFFD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6AFD409D3A8A82806BD8C7 /* Pods-Diversidade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Diversidade/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.francisceioseph.Diversidade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
