@@ -7,77 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21E79780BC2277103B1237816718D9B7 /* KILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E2DFD93FE3ED4BFCFF5ADC1A18CB5 /* KILabel.m */; };
-		25A241BBAD4C411A70BCA8C07370A287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		7BD5A2518B8D255B190A1620CB90B42B /* KILabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE67E8292CDCC6179E7AFACD2A5A2408 /* KILabel-dummy.m */; };
-		B827E1D8047701C75EDE3DF58B7A74E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
-		BD5BB57C14CDB08819ED2F2F831968B2 /* KILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = AACEE8DB4F6B2679FDEC051B99958073 /* KILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D88F4EA37A137CF184B6D52C4FB9D99B /* Pods-Diversidade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7270F07E148826467AB6E792C5D72A0 /* Pods-Diversidade-dummy.m */; };
-		D9A8964CD6AF30AC8D2E175AFF44CE95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		0C654CF1E0D8AAB42D6B91BA5B1A4533 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		1A0EE59DDB5CF933940F55E54B16206A /* Pods-Diversidade-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1CD84667F2C20F609CEC7FFF062F0A2 /* Pods-Diversidade-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9496E502D7BCF19F5EA6DB425E2147 /* KILabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7EE43450ADE69BE1767DF03E48CFEA /* KILabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53E467E5CD491326B81D7A8E12FFDF36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		81BBF5CFE65138573D5EA041D1F1E825 /* KILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 398E068F1CC42B00259CA65ECE6C14D8 /* KILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE9464C1ADD4569CF80AEB113745E53 /* KILabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4305A05C5CC4601BFBCEDB48C7571180 /* KILabel-dummy.m */; };
+		90DDDCC1C15322B2AA511E1DED123438 /* Pods-Diversidade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C9FAFDD8F1FE79A0C51A73E90474E /* Pods-Diversidade-dummy.m */; };
+		90EABDCD203B4BEABB125E254EDDDF2E /* KILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A86C9516DE1EDDE9E219F64A0274816 /* KILabel.m */; };
+		EF02BAE40B258E1F35263C1891E008EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		59308F5338D6D383559E52486F42A23E /* PBXContainerItemProxy */ = {
+		D13680D572C67AFAA16661D2CCA6715E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A719DC9F50CC08874A1E4FC57D148162;
+			remoteGlobalIDString = 162B59B96FF1F5B6B21CF89AC9E41170;
 			remoteInfo = KILabel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03C5C611FDABB3282481906A85EAD39E /* Pods-Diversidade-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Diversidade-acknowledgements.plist"; sourceTree = "<group>"; };
-		1B44CE3CF52EF8805E2B6332E277B98D /* libPods-Diversidade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diversidade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AFC1BAF4BC1FDADDFFBBC96BCAC5AE0 /* KILabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KILabel-prefix.pch"; sourceTree = "<group>"; };
-		5633DF4EB6FB0DB3F2AAFBA9D730FCA7 /* Pods-Diversidade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diversidade.debug.xcconfig"; sourceTree = "<group>"; };
+		277934ABD7C94750AD79D92768EC032C /* Pods-Diversidade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diversidade.release.xcconfig"; sourceTree = "<group>"; };
+		394C9FAFDD8F1FE79A0C51A73E90474E /* Pods-Diversidade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Diversidade-dummy.m"; sourceTree = "<group>"; };
+		398E068F1CC42B00259CA65ECE6C14D8 /* KILabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KILabel.h; path = KILabel/Source/KILabel.h; sourceTree = "<group>"; };
+		4305A05C5CC4601BFBCEDB48C7571180 /* KILabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KILabel-dummy.m"; sourceTree = "<group>"; };
+		457CBDDA33BD860E5C9C03FF419465F6 /* Pods-Diversidade.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Diversidade.modulemap"; sourceTree = "<group>"; };
+		45F7989955B4FF485FCE7C844738E561 /* Pods-Diversidade-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Diversidade-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61B17322B6E77E8447127B5EAF13038C /* KILabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KILabel.xcconfig; sourceTree = "<group>"; };
 		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		712D9CB515F8324DDF5F7D62916ADF06 /* Pods-Diversidade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diversidade.release.xcconfig"; sourceTree = "<group>"; };
-		7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KILabel.xcconfig; sourceTree = "<group>"; };
-		999D0D72C61699A172DEBFDAF2663DF4 /* Pods-Diversidade-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Diversidade-resources.sh"; sourceTree = "<group>"; };
-		9B1E2DFD93FE3ED4BFCFF5ADC1A18CB5 /* KILabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KILabel.m; path = KILabel/Source/KILabel.m; sourceTree = "<group>"; };
-		9DA88BA2071BACC8AC2C7EBB07504241 /* Pods-Diversidade-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Diversidade-frameworks.sh"; sourceTree = "<group>"; };
-		AACEE8DB4F6B2679FDEC051B99958073 /* KILabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KILabel.h; path = KILabel/Source/KILabel.h; sourceTree = "<group>"; };
-		AE66847C71DC4D09779DADA6FC60309A /* libKILabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKILabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7270F07E148826467AB6E792C5D72A0 /* Pods-Diversidade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Diversidade-dummy.m"; sourceTree = "<group>"; };
+		726FF40090A96FB2B609F6346B81476B /* KILabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KILabel-prefix.pch"; sourceTree = "<group>"; };
+		77C174AB4AB89F1B07E556580BE6B74C /* KILabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KILabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AE44E8982A4865C9C12AAB73DA24E9 /* Pods-Diversidade-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Diversidade-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A7EE43450ADE69BE1767DF03E48CFEA /* KILabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KILabel-umbrella.h"; sourceTree = "<group>"; };
+		9A86C9516DE1EDDE9E219F64A0274816 /* KILabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KILabel.m; path = KILabel/Source/KILabel.m; sourceTree = "<group>"; };
+		B83D9C3DCAD6BFA4DA6A3768D3D012A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE67E8292CDCC6179E7AFACD2A5A2408 /* KILabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KILabel-dummy.m"; sourceTree = "<group>"; };
 		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D8A2D7DD4E1FA50655305056A2EBC407 /* Pods-Diversidade-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Diversidade-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA4A6703295FBBC009A42685127024FC /* KILabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KILabel.modulemap; sourceTree = "<group>"; };
+		CB9B25013B97EA23BE55F64F5097DDDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC1138393F27E0A15BAFA4C6CA846B33 /* Pods_Diversidade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diversidade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0105A84408409F83F571B79919F573 /* Pods-Diversidade-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Diversidade-resources.sh"; sourceTree = "<group>"; };
+		DED83A32FC686EEABAEB18CB84EAB246 /* Pods-Diversidade-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Diversidade-frameworks.sh"; sourceTree = "<group>"; };
+		E1CD84667F2C20F609CEC7FFF062F0A2 /* Pods-Diversidade-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Diversidade-umbrella.h"; sourceTree = "<group>"; };
+		E6762E5F645586E64CE2900BE4014232 /* Pods-Diversidade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diversidade.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		443D7602E7A82258DF09E6B3514C9B50 /* Frameworks */ = {
+		28892ABD4E515DBBD3170174A4ABA90D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A8964CD6AF30AC8D2E175AFF44CE95 /* Foundation.framework in Frameworks */,
+				EF02BAE40B258E1F35263C1891E008EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D58AC9681EDECE96A09F59397005B17C /* Frameworks */ = {
+		FA95BAC96CB36972ABED47FC46BE1B16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A241BBAD4C411A70BCA8C07370A287 /* Foundation.framework in Frameworks */,
-				B827E1D8047701C75EDE3DF58B7A74E5 /* UIKit.framework in Frameworks */,
+				53E467E5CD491326B81D7A8E12FFDF36 /* Foundation.framework in Frameworks */,
+				0C654CF1E0D8AAB42D6B91BA5B1A4533 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03E39D5A87DD94DE5B48830EBDD1E904 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */,
-				BE67E8292CDCC6179E7AFACD2A5A2408 /* KILabel-dummy.m */,
-				2AFC1BAF4BC1FDADDFFBBC96BCAC5AE0 /* KILabel-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/KILabel";
-			sourceTree = "<group>";
-		};
 		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,14 +84,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		3F8A9C5F5A7179B8D2BF3DB844D91D40 /* KILabel */ = {
+		1AC820974C367200949622B8606A7818 /* Pods-Diversidade */ = {
 			isa = PBXGroup;
 			children = (
-				AACEE8DB4F6B2679FDEC051B99958073 /* KILabel.h */,
-				9B1E2DFD93FE3ED4BFCFF5ADC1A18CB5 /* KILabel.m */,
-				03E39D5A87DD94DE5B48830EBDD1E904 /* Support Files */,
+				CB9B25013B97EA23BE55F64F5097DDDC /* Info.plist */,
+				457CBDDA33BD860E5C9C03FF419465F6 /* Pods-Diversidade.modulemap */,
+				45F7989955B4FF485FCE7C844738E561 /* Pods-Diversidade-acknowledgements.markdown */,
+				84AE44E8982A4865C9C12AAB73DA24E9 /* Pods-Diversidade-acknowledgements.plist */,
+				394C9FAFDD8F1FE79A0C51A73E90474E /* Pods-Diversidade-dummy.m */,
+				DED83A32FC686EEABAEB18CB84EAB246 /* Pods-Diversidade-frameworks.sh */,
+				DD0105A84408409F83F571B79919F573 /* Pods-Diversidade-resources.sh */,
+				E1CD84667F2C20F609CEC7FFF062F0A2 /* Pods-Diversidade-umbrella.h */,
+				E6762E5F645586E64CE2900BE4014232 /* Pods-Diversidade.debug.xcconfig */,
+				277934ABD7C94750AD79D92768EC032C /* Pods-Diversidade.release.xcconfig */,
 			);
-			path = KILabel;
+			name = "Pods-Diversidade";
+			path = "Target Support Files/Pods-Diversidade";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -105,78 +110,96 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		440EA5036CB404D9EA943138442A481A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77C174AB4AB89F1B07E556580BE6B74C /* KILabel.framework */,
+				CC1138393F27E0A15BAFA4C6CA846B33 /* Pods_Diversidade.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				D26FB24B1F0FCD5B15A3E4323840A40A /* Pods */,
-				9DD0339EA157DADDF98A8C7232484BDB /* Products */,
-				F89F2BF24CBF7C251A9D591622D5023D /* Targets Support Files */,
+				440EA5036CB404D9EA943138442A481A /* Products */,
+				AA85E93A0AA217FAD38223945E147667 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9DD0339EA157DADDF98A8C7232484BDB /* Products */ = {
+		9C8BFF9B2225C41FC52600B9698B6C6A /* KILabel */ = {
 			isa = PBXGroup;
 			children = (
-				AE66847C71DC4D09779DADA6FC60309A /* libKILabel.a */,
-				1B44CE3CF52EF8805E2B6332E277B98D /* libPods-Diversidade.a */,
+				398E068F1CC42B00259CA65ECE6C14D8 /* KILabel.h */,
+				9A86C9516DE1EDDE9E219F64A0274816 /* KILabel.m */,
+				D6C81263028900717B00796D56AC51F8 /* Support Files */,
 			);
-			name = Products;
+			path = KILabel;
+			sourceTree = "<group>";
+		};
+		AA85E93A0AA217FAD38223945E147667 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AC820974C367200949622B8606A7818 /* Pods-Diversidade */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		D26FB24B1F0FCD5B15A3E4323840A40A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F8A9C5F5A7179B8D2BF3DB844D91D40 /* KILabel */,
+				9C8BFF9B2225C41FC52600B9698B6C6A /* KILabel */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EDEF35F1D97CB6F590B8702F18D5FB10 /* Pods-Diversidade */ = {
+		D6C81263028900717B00796D56AC51F8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8A2D7DD4E1FA50655305056A2EBC407 /* Pods-Diversidade-acknowledgements.markdown */,
-				03C5C611FDABB3282481906A85EAD39E /* Pods-Diversidade-acknowledgements.plist */,
-				B7270F07E148826467AB6E792C5D72A0 /* Pods-Diversidade-dummy.m */,
-				9DA88BA2071BACC8AC2C7EBB07504241 /* Pods-Diversidade-frameworks.sh */,
-				999D0D72C61699A172DEBFDAF2663DF4 /* Pods-Diversidade-resources.sh */,
-				5633DF4EB6FB0DB3F2AAFBA9D730FCA7 /* Pods-Diversidade.debug.xcconfig */,
-				712D9CB515F8324DDF5F7D62916ADF06 /* Pods-Diversidade.release.xcconfig */,
+				B83D9C3DCAD6BFA4DA6A3768D3D012A1 /* Info.plist */,
+				CA4A6703295FBBC009A42685127024FC /* KILabel.modulemap */,
+				61B17322B6E77E8447127B5EAF13038C /* KILabel.xcconfig */,
+				4305A05C5CC4601BFBCEDB48C7571180 /* KILabel-dummy.m */,
+				726FF40090A96FB2B609F6346B81476B /* KILabel-prefix.pch */,
+				9A7EE43450ADE69BE1767DF03E48CFEA /* KILabel-umbrella.h */,
 			);
-			name = "Pods-Diversidade";
-			path = "Target Support Files/Pods-Diversidade";
-			sourceTree = "<group>";
-		};
-		F89F2BF24CBF7C251A9D591622D5023D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EDEF35F1D97CB6F590B8702F18D5FB10 /* Pods-Diversidade */,
-			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/KILabel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0D00454FF8F384BC43EC41F902676FB4 /* Headers */ = {
+		41530358E815C06F906C5FEC5BAFB16A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5BB57C14CDB08819ED2F2F831968B2 /* KILabel.h in Headers */,
+				3F9496E502D7BCF19F5EA6DB425E2147 /* KILabel-umbrella.h in Headers */,
+				81BBF5CFE65138573D5EA041D1F1E825 /* KILabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9516430D85AF53C9A78F55649E8F4A9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0EE59DDB5CF933940F55E54B16206A /* Pods-Diversidade-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A719DC9F50CC08874A1E4FC57D148162 /* KILabel */ = {
+		162B59B96FF1F5B6B21CF89AC9E41170 /* KILabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D151E15D0F99FE7C5D177630637A902 /* Build configuration list for PBXNativeTarget "KILabel" */;
+			buildConfigurationList = 2622523E31C7B15642B83BDF6CAC4212 /* Build configuration list for PBXNativeTarget "KILabel" */;
 			buildPhases = (
-				C1711E6019AD394455FF827C78B4E3BC /* Sources */,
-				D58AC9681EDECE96A09F59397005B17C /* Frameworks */,
-				0D00454FF8F384BC43EC41F902676FB4 /* Headers */,
+				53AE7FFA5DE8A57A0772E4802D415D26 /* Sources */,
+				FA95BAC96CB36972ABED47FC46BE1B16 /* Frameworks */,
+				41530358E815C06F906C5FEC5BAFB16A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -184,25 +207,26 @@
 			);
 			name = KILabel;
 			productName = KILabel;
-			productReference = AE66847C71DC4D09779DADA6FC60309A /* libKILabel.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 77C174AB4AB89F1B07E556580BE6B74C /* KILabel.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		BEA7C6E06B728280833AF7245A29B346 /* Pods-Diversidade */ = {
+		E0E1FB45613BB5B87531033C1EC1F0BC /* Pods-Diversidade */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52C72F0064900E335F6B9432DB355D68 /* Build configuration list for PBXNativeTarget "Pods-Diversidade" */;
+			buildConfigurationList = A3EC86F4E152E7453140235F5753DEBA /* Build configuration list for PBXNativeTarget "Pods-Diversidade" */;
 			buildPhases = (
-				EBFCBB6B796C23AF88367C50C207635D /* Sources */,
-				443D7602E7A82258DF09E6B3514C9B50 /* Frameworks */,
+				67FA4CB7CCEBAA37F9CA3CBA74AD4531 /* Sources */,
+				28892ABD4E515DBBD3170174A4ABA90D /* Frameworks */,
+				9516430D85AF53C9A78F55649E8F4A9C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AC32D096630244310AB99EFB937A43C7 /* PBXTargetDependency */,
+				542B49F9D5487291191359925449C9D6 /* PBXTargetDependency */,
 			);
 			name = "Pods-Diversidade";
 			productName = "Pods-Diversidade";
-			productReference = 1B44CE3CF52EF8805E2B6332E277B98D /* libPods-Diversidade.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = CC1138393F27E0A15BAFA4C6CA846B33 /* Pods_Diversidade.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -221,61 +245,73 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9DD0339EA157DADDF98A8C7232484BDB /* Products */;
+			productRefGroup = 440EA5036CB404D9EA943138442A481A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A719DC9F50CC08874A1E4FC57D148162 /* KILabel */,
-				BEA7C6E06B728280833AF7245A29B346 /* Pods-Diversidade */,
+				162B59B96FF1F5B6B21CF89AC9E41170 /* KILabel */,
+				E0E1FB45613BB5B87531033C1EC1F0BC /* Pods-Diversidade */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C1711E6019AD394455FF827C78B4E3BC /* Sources */ = {
+		53AE7FFA5DE8A57A0772E4802D415D26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD5A2518B8D255B190A1620CB90B42B /* KILabel-dummy.m in Sources */,
-				21E79780BC2277103B1237816718D9B7 /* KILabel.m in Sources */,
+				8EE9464C1ADD4569CF80AEB113745E53 /* KILabel-dummy.m in Sources */,
+				90EABDCD203B4BEABB125E254EDDDF2E /* KILabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBFCBB6B796C23AF88367C50C207635D /* Sources */ = {
+		67FA4CB7CCEBAA37F9CA3CBA74AD4531 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88F4EA37A137CF184B6D52C4FB9D99B /* Pods-Diversidade-dummy.m in Sources */,
+				90DDDCC1C15322B2AA511E1DED123438 /* Pods-Diversidade-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC32D096630244310AB99EFB937A43C7 /* PBXTargetDependency */ = {
+		542B49F9D5487291191359925449C9D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KILabel;
-			target = A719DC9F50CC08874A1E4FC57D148162 /* KILabel */;
-			targetProxy = 59308F5338D6D383559E52486F42A23E /* PBXContainerItemProxy */;
+			target = 162B59B96FF1F5B6B21CF89AC9E41170 /* KILabel */;
+			targetProxy = D13680D572C67AFAA16661D2CCA6715E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		298FE5323E6D53F82DE16BFFE73A2039 /* Release */ = {
+		3EFB4A2BA94B9D47A4C46D5120475EAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */;
+			baseConfigurationReference = 277934ABD7C94750AD79D92768EC032C /* Pods-Diversidade.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KILabel/KILabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Diversidade/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Diversidade/Pods-Diversidade.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Diversidade;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -352,61 +388,102 @@
 			};
 			name = Release;
 		};
-		A8415B25A3E78B659F73525C483A662F /* Debug */ = {
+		8B2FE9E3FBB54D98E7DCDC7BB135C985 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B6CF044FA0BBB5776A5CCD6B0293E8B /* KILabel.xcconfig */;
+			baseConfigurationReference = E6762E5F645586E64CE2900BE4014232 /* Pods-Diversidade.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Diversidade/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Diversidade/Pods-Diversidade.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Diversidade;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5DB12A7A9960D078ABF7708D916D95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B17322B6E77E8447127B5EAF13038C /* KILabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/KILabel/KILabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KILabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KILabel/KILabel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = KILabel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C40A458326C549DBC84B5872FF7FBD90 /* Debug */ = {
+		AD01DFE5B8D8E94318FBEE342A848713 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5633DF4EB6FB0DB3F2AAFBA9D730FCA7 /* Pods-Diversidade.debug.xcconfig */;
+			baseConfigurationReference = 61B17322B6E77E8447127B5EAF13038C /* KILabel.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KILabel/KILabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KILabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D4ED600E9B1CC1C2C650F16277E7979F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 712D9CB515F8324DDF5F7D62916ADF06 /* Pods-Diversidade.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KILabel/KILabel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KILabel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2622523E31C7B15642B83BDF6CAC4212 /* Build configuration list for PBXNativeTarget "KILabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DB12A7A9960D078ABF7708D916D95E /* Debug */,
+				AD01DFE5B8D8E94318FBEE342A848713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -416,20 +493,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52C72F0064900E335F6B9432DB355D68 /* Build configuration list for PBXNativeTarget "Pods-Diversidade" */ = {
+		A3EC86F4E152E7453140235F5753DEBA /* Build configuration list for PBXNativeTarget "Pods-Diversidade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C40A458326C549DBC84B5872FF7FBD90 /* Debug */,
-				D4ED600E9B1CC1C2C650F16277E7979F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5D151E15D0F99FE7C5D177630637A902 /* Build configuration list for PBXNativeTarget "KILabel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8415B25A3E78B659F73525C483A662F /* Debug */,
-				298FE5323E6D53F82DE16BFFE73A2039 /* Release */,
+				8B2FE9E3FBB54D98E7DCDC7BB135C985 /* Debug */,
+				3EFB4A2BA94B9D47A4C46D5120475EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

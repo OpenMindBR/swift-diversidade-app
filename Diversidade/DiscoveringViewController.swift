@@ -14,7 +14,9 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
     
     var datasource:[Post]?
     
-    override func viewDidLoad() {        
+    override func viewDidLoad() {
+        datasource = DiscoveringMock.mockDiscoveringData()
+        
         super.viewDidLoad()
         self.configureSideMenu(self.menuItem)
     }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0320E34BC154ED38E899FF51 /* libPods-Diversidade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3C8AA115A9FA4F10AB6A12 /* libPods-Diversidade.a */; };
 		0B8AF4291C7DDBA400068F83 /* SideMenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */; };
 		0B8AF4301C7DDE7B00068F83 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42A1C7DDE7B00068F83 /* AboutViewController.swift */; };
 		0B8AF4311C7DDE7B00068F83 /* CentersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42B1C7DDE7B00068F83 /* CentersViewController.swift */; };
@@ -25,7 +24,10 @@
 		0BD3F6ED1C77443900FAFFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3F6EB1C77443900FAFFD9 /* LaunchScreen.storyboard */; };
 		0BD3F6F81C77443900FAFFD9 /* DiversidadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6F71C77443900FAFFD9 /* DiversidadeTests.swift */; };
 		0BD3F7031C77443A00FAFFD9 /* DiversidadeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F7021C77443A00FAFFD9 /* DiversidadeUITests.swift */; };
+		0BD7C5271C949B2F005A21E1 /* DiscoveringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7C5261C949B2F005A21E1 /* DiscoveringMock.swift */; };
+		0BD7C5291C949C74005A21E1 /* PostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7C5281C949C74005A21E1 /* PostType.swift */; };
 		0BE767951C8F4E3D0013843B /* Developers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BE767941C8F4E3D0013843B /* Developers.plist */; };
+		D19A1FB8A512103C365EA51D /* Pods_Diversidade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D38AABD2853D57F047F028 /* Pods_Diversidade.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +74,11 @@
 		0BD3F6FE1C77443A00FAFFD9 /* DiversidadeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiversidadeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3F7021C77443A00FAFFD9 /* DiversidadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiversidadeUITests.swift; sourceTree = "<group>"; };
 		0BD3F7041C77443A00FAFFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BD7C5261C949B2F005A21E1 /* DiscoveringMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveringMock.swift; sourceTree = "<group>"; };
+		0BD7C5281C949C74005A21E1 /* PostType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostType.swift; sourceTree = "<group>"; };
 		0BE767941C8F4E3D0013843B /* Developers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Developers.plist; sourceTree = "<group>"; };
+		48D38AABD2853D57F047F028 /* Pods_Diversidade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diversidade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6AFD409D3A8A82806BD8C7 /* Pods-Diversidade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diversidade.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade.release.xcconfig"; sourceTree = "<group>"; };
-		CD3C8AA115A9FA4F10AB6A12 /* libPods-Diversidade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diversidade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0320E34BC154ED38E899FF51 /* libPods-Diversidade.a in Frameworks */,
+				D19A1FB8A512103C365EA51D /* Pods_Diversidade.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +172,7 @@
 		0BD3F6DE1C77443900FAFFD9 /* Diversidade */ = {
 			isa = PBXGroup;
 			children = (
+				0BD7C5251C949B03005A21E1 /* dummy */,
 				0BE767911C8F1B5A0013843B /* helpers */,
 				0B94E6331C88A2C900DDD703 /* models */,
 				0BA893311C8881B700F547E3 /* cells */,
@@ -200,11 +205,20 @@
 			path = DiversidadeUITests;
 			sourceTree = "<group>";
 		};
+		0BD7C5251C949B03005A21E1 /* dummy */ = {
+			isa = PBXGroup;
+			children = (
+				0BD7C5261C949B2F005A21E1 /* DiscoveringMock.swift */,
+			);
+			name = dummy;
+			sourceTree = "<group>";
+		};
 		0BE767911C8F1B5A0013843B /* helpers */ = {
 			isa = PBXGroup;
 			children = (
 				0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */,
 				0BE767941C8F4E3D0013843B /* Developers.plist */,
+				0BD7C5281C949C74005A21E1 /* PostType.swift */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -221,7 +235,7 @@
 		28CBB582F0AD20E9701F8754 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD3C8AA115A9FA4F10AB6A12 /* libPods-Diversidade.a */,
+				48D38AABD2853D57F047F028 /* Pods_Diversidade.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -409,10 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD7C5271C949B2F005A21E1 /* DiscoveringMock.swift in Sources */,
 				0BA893331C8881DE00F547E3 /* PostTableViewCell.swift in Sources */,
 				0B8AF4311C7DDE7B00068F83 /* CentersViewController.swift in Sources */,
 				0B8AF4331C7DDE7B00068F83 /* HealthViewController.swift in Sources */,
 				0B94E6351C88A30F00DDD703 /* Post.swift in Sources */,
+				0BD7C5291C949C74005A21E1 /* PostType.swift in Sources */,
 				0B8AF4301C7DDE7B00068F83 /* AboutViewController.swift in Sources */,
 				0B8AF4341C7DDE7B00068F83 /* RightsViewController.swift in Sources */,
 				0BD3F6E81C77443900FAFFD9 /* Diversidade.xcdatamodeld in Sources */,
