@@ -15,6 +15,7 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var googleMapView: GMSMapView!
     
     let locationManager = CLLocationManager()
+    let searchRadius = 1000
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +65,15 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
-
+    func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D){
+        self.googleMapView.clear()
+        
+        //TODO: Create a DataProvider
+        //TODO: Query the server by the locations near here
+        //TODO: Iterate over got places, create markers and put it
+        //      on the map.          
+    }
+    
     /*
     // MARK: - Navigation
 
