@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B76556E1CB44B6C00E5B065 /* PlaceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76556D1CB44B6C00E5B065 /* PlaceMaker.swift */; };
+		0B7655701CB44D7400E5B065 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76556F1CB44D7400E5B065 /* GooglePlace.swift */; };
 		0B8AF4291C7DDBA400068F83 /* SideMenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */; };
 		0B8AF4301C7DDE7B00068F83 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42A1C7DDE7B00068F83 /* AboutViewController.swift */; };
 		0B8AF4311C7DDE7B00068F83 /* CentersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42B1C7DDE7B00068F83 /* CentersViewController.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		0188706D515E2771A83659A5 /* Pods-Diversidade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diversidade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade.debug.xcconfig"; sourceTree = "<group>"; };
+		0B76556D1CB44B6C00E5B065 /* PlaceMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMaker.swift; sourceTree = "<group>"; };
+		0B76556F1CB44D7400E5B065 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuExtension.swift; sourceTree = "<group>"; };
 		0B8AF42A1C7DDE7B00068F83 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		0B8AF42B1C7DDE7B00068F83 /* CentersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentersViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		0B94E6331C88A2C900DDD703 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				0B76556F1CB44D7400E5B065 /* GooglePlace.swift */,
 				0B94E6341C88A30F00DDD703 /* Post.swift */,
 			);
 			name = models;
@@ -219,6 +224,7 @@
 				0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */,
 				0BE767941C8F4E3D0013843B /* Developers.plist */,
 				0BD7C5281C949C74005A21E1 /* PostType.swift */,
+				0B76556D1CB44B6C00E5B065 /* PlaceMaker.swift */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BD7C5271C949B2F005A21E1 /* DiscoveringMock.swift in Sources */,
+				0B76556E1CB44B6C00E5B065 /* PlaceMaker.swift in Sources */,
 				0BA893331C8881DE00F547E3 /* PostTableViewCell.swift in Sources */,
 				0B8AF4311C7DDE7B00068F83 /* CentersViewController.swift in Sources */,
 				0B8AF4331C7DDE7B00068F83 /* HealthViewController.swift in Sources */,
@@ -436,6 +443,7 @@
 				0B8AF4291C7DDBA400068F83 /* SideMenuExtension.swift in Sources */,
 				0B8AF4321C7DDE7B00068F83 /* DiscoveringViewController.swift in Sources */,
 				0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */,
+				0B7655701CB44D7400E5B065 /* GooglePlace.swift in Sources */,
 				0B8AF4351C7DDE7B00068F83 /* SuggestionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

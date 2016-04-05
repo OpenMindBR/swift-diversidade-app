@@ -6,6 +6,7 @@ use_frameworks!
 target 'Diversidade' do
     pod 'KILabel', '1.0.0'
     pod 'GoogleMaps'
+    pod 'SwiftyJSON', '~> 2.3.0'
 end
 
 target 'DiversidadeTests' do
