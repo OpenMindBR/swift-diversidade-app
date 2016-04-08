@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B262EF71CB6C58400681F5F /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B262EF61CB6C58400681F5F /* Address.swift */; };
+		0B262EFB1CB6C8B200681F5F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B262EFA1CB6C8B200681F5F /* Service.swift */; };
+		0B262EFD1CB6C91900681F5F /* Horary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B262EFC1CB6C91900681F5F /* Horary.swift */; };
+		0B262F011CB6CE8A00681F5F /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B262F001CB6CE8A00681F5F /* CommentTableViewCell.swift */; };
+		0B262F031CB6D21100681F5F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B262F021CB6D21100681F5F /* Comment.swift */; };
+		0B262F051CB6D81700681F5F /* Nucleo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B262F041CB6D81700681F5F /* Nucleo.swift */; };
+		0B2ED02A1CB82BFB0042DA88 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ED0291CB82BFB0042DA88 /* AddressTableViewCell.swift */; };
+		0B2ED02C1CB82C3F0042DA88 /* HoraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ED02B1CB82C3F0042DA88 /* HoraryTableViewCell.swift */; };
+		0B2ED02E1CB82C510042DA88 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ED02D1CB82C510042DA88 /* ServiceTableViewCell.swift */; };
 		0B76556E1CB44B6C00E5B065 /* PlaceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76556D1CB44B6C00E5B065 /* PlaceMaker.swift */; };
 		0B7655701CB44D7400E5B065 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76556F1CB44D7400E5B065 /* GooglePlace.swift */; };
 		0B8AF4291C7DDBA400068F83 /* SideMenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */; };
@@ -18,7 +27,7 @@
 		0B8AF4351C7DDE7B00068F83 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42F1C7DDE7B00068F83 /* SuggestionsViewController.swift */; };
 		0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90686E1C776D00008CF631 /* SWRevealViewController.m */; };
 		0B94E6351C88A30F00DDD703 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B94E6341C88A30F00DDD703 /* Post.swift */; };
-		0BA893331C8881DE00F547E3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA893321C8881DE00F547E3 /* PostTableViewCell.swift */; };
+		0BCAE5131CB5833C0055136F /* DetailCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAE5121CB5833C0055136F /* DetailCenterViewController.swift */; };
 		0BD3F6E01C77443900FAFFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */; };
 		0BD3F6E51C77443900FAFFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3F6E31C77443900FAFFD9 /* Main.storyboard */; };
 		0BD3F6E81C77443900FAFFD9 /* Diversidade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6E61C77443900FAFFD9 /* Diversidade.xcdatamodeld */; };
@@ -51,6 +60,15 @@
 
 /* Begin PBXFileReference section */
 		0188706D515E2771A83659A5 /* Pods-Diversidade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diversidade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diversidade/Pods-Diversidade.debug.xcconfig"; sourceTree = "<group>"; };
+		0B262EF61CB6C58400681F5F /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		0B262EFA1CB6C8B200681F5F /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		0B262EFC1CB6C91900681F5F /* Horary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Horary.swift; sourceTree = "<group>"; };
+		0B262F001CB6CE8A00681F5F /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		0B262F021CB6D21100681F5F /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		0B262F041CB6D81700681F5F /* Nucleo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nucleo.swift; sourceTree = "<group>"; };
+		0B2ED0291CB82BFB0042DA88 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		0B2ED02B1CB82C3F0042DA88 /* HoraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoraryTableViewCell.swift; sourceTree = "<group>"; };
+		0B2ED02D1CB82C510042DA88 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		0B76556D1CB44B6C00E5B065 /* PlaceMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMaker.swift; sourceTree = "<group>"; };
 		0B76556F1CB44D7400E5B065 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuExtension.swift; sourceTree = "<group>"; };
@@ -64,7 +82,7 @@
 		0B90686D1C776D00008CF631 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0B90686E1C776D00008CF631 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		0B94E6341C88A30F00DDD703 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		0BA893321C8881DE00F547E3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		0BCAE5121CB5833C0055136F /* DetailCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCenterViewController.swift; sourceTree = "<group>"; };
 		0BD3F6DC1C77443900FAFFD9 /* Diversidade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diversidade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD3F6E41C77443900FAFFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +132,7 @@
 		0B8AF4231C7DDAA200068F83 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0BCAE5121CB5833C0055136F /* DetailCenterViewController.swift */,
 				0B8AF42A1C7DDE7B00068F83 /* AboutViewController.swift */,
 				0B8AF42B1C7DDE7B00068F83 /* CentersViewController.swift */,
 				0B8AF42C1C7DDE7B00068F83 /* DiscoveringViewController.swift */,
@@ -138,6 +157,11 @@
 			children = (
 				0B76556F1CB44D7400E5B065 /* GooglePlace.swift */,
 				0B94E6341C88A30F00DDD703 /* Post.swift */,
+				0B262EF61CB6C58400681F5F /* Address.swift */,
+				0B262EFA1CB6C8B200681F5F /* Service.swift */,
+				0B262EFC1CB6C91900681F5F /* Horary.swift */,
+				0B262F021CB6D21100681F5F /* Comment.swift */,
+				0B262F041CB6D81700681F5F /* Nucleo.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -145,7 +169,10 @@
 		0BA893311C8881B700F547E3 /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				0BA893321C8881DE00F547E3 /* PostTableViewCell.swift */,
+				0B262F001CB6CE8A00681F5F /* CommentTableViewCell.swift */,
+				0B2ED0291CB82BFB0042DA88 /* AddressTableViewCell.swift */,
+				0B2ED02B1CB82C3F0042DA88 /* HoraryTableViewCell.swift */,
+				0B2ED02D1CB82C510042DA88 /* ServiceTableViewCell.swift */,
 			);
 			name = cells;
 			sourceTree = "<group>";
@@ -429,18 +456,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B262EF71CB6C58400681F5F /* Address.swift in Sources */,
+				0B262F031CB6D21100681F5F /* Comment.swift in Sources */,
+				0B2ED02E1CB82C510042DA88 /* ServiceTableViewCell.swift in Sources */,
 				0BD7C5271C949B2F005A21E1 /* DiscoveringMock.swift in Sources */,
+				0B2ED02A1CB82BFB0042DA88 /* AddressTableViewCell.swift in Sources */,
 				0B76556E1CB44B6C00E5B065 /* PlaceMaker.swift in Sources */,
-				0BA893331C8881DE00F547E3 /* PostTableViewCell.swift in Sources */,
 				0B8AF4311C7DDE7B00068F83 /* CentersViewController.swift in Sources */,
 				0B8AF4331C7DDE7B00068F83 /* HealthViewController.swift in Sources */,
 				0B94E6351C88A30F00DDD703 /* Post.swift in Sources */,
 				0BD7C5291C949C74005A21E1 /* PostType.swift in Sources */,
 				0B8AF4301C7DDE7B00068F83 /* AboutViewController.swift in Sources */,
 				0B8AF4341C7DDE7B00068F83 /* RightsViewController.swift in Sources */,
+				0B262EFB1CB6C8B200681F5F /* Service.swift in Sources */,
+				0B2ED02C1CB82C3F0042DA88 /* HoraryTableViewCell.swift in Sources */,
+				0B262F011CB6CE8A00681F5F /* CommentTableViewCell.swift in Sources */,
+				0B262F051CB6D81700681F5F /* Nucleo.swift in Sources */,
 				0BD3F6E81C77443900FAFFD9 /* Diversidade.xcdatamodeld in Sources */,
 				0BD3F6E01C77443900FAFFD9 /* AppDelegate.swift in Sources */,
+				0BCAE5131CB5833C0055136F /* DetailCenterViewController.swift in Sources */,
 				0B8AF4291C7DDBA400068F83 /* SideMenuExtension.swift in Sources */,
+				0B262EFD1CB6C91900681F5F /* Horary.swift in Sources */,
 				0B8AF4321C7DDE7B00068F83 /* DiscoveringViewController.swift in Sources */,
 				0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */,
 				0B7655701CB44D7400E5B065 /* GooglePlace.swift in Sources */,
