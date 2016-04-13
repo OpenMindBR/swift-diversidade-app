@@ -9,6 +9,7 @@
 import UIKit
 
 class Post {
+    
     let category: PostType
     let title: String?
     let date: String?

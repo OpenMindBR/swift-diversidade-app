@@ -3,4 +3,3 @@
 //
 
 #import "SWRevealViewController.h"
-#import "KILabel.h"
