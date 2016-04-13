@@ -12,7 +12,7 @@ extension UIViewController {
     func configureSideMenu(menuButton:UIBarButtonItem!){
         if let revealController = self.revealViewController(){
             menuButton.target = revealController
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             
             self.view.addGestureRecognizer(revealController.panGestureRecognizer())
         }

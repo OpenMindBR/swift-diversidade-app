@@ -15,4 +15,10 @@ class DiscoveringMock {
         
         return [post]
     }
+    
+    static func mockPlaces() -> [Nucleo]{
+        let nucleo = Nucleo(name: "Some name", phone: "some phone", email: "some email", urlSite: "some url", xCoord: -3.741175, yCoord: -38.540062)
+        
+        return [nucleo]
+    }
 }

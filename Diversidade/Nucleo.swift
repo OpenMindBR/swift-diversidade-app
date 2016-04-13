@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class Nucleo: NSObject {
     
@@ -14,16 +15,18 @@ class Nucleo: NSObject {
     let phone: String
     let email: String
     let urlSite: String
+    let location: CLLocationCoordinate2D
     
     var address: Address?
     var services: [Service]?
     var horary: [Horary]?
     
-    init(name: String, phone: String, email: String, urlSite: String) {
+    init(name: String, phone: String, email: String, urlSite: String, xCoord:CLLocationDegrees , yCoord: CLLocationDegrees) {
         self.name = name
         self.phone = phone
         self.email = email
         self.urlSite = urlSite
+        self.location = CLLocationCoordinate2D(latitude: xCoord, longitude: yCoord)
     }
 
 }
