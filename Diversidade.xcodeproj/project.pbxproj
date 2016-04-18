@@ -23,7 +23,6 @@
 		0B8AF4321C7DDE7B00068F83 /* DiscoveringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42C1C7DDE7B00068F83 /* DiscoveringViewController.swift */; };
 		0B8AF4331C7DDE7B00068F83 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42D1C7DDE7B00068F83 /* HealthViewController.swift */; };
 		0B8AF4341C7DDE7B00068F83 /* RightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42E1C7DDE7B00068F83 /* RightsViewController.swift */; };
-		0B8AF4351C7DDE7B00068F83 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AF42F1C7DDE7B00068F83 /* SuggestionsViewController.swift */; };
 		0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90686E1C776D00008CF631 /* SWRevealViewController.m */; };
 		0B94E6351C88A30F00DDD703 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B94E6341C88A30F00DDD703 /* Post.swift */; };
 		0BC1EB671CBEB204008960F3 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1EB661CBEB204008960F3 /* PlaceMarker.swift */; };
@@ -78,7 +77,6 @@
 		0B8AF42C1C7DDE7B00068F83 /* DiscoveringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveringViewController.swift; sourceTree = "<group>"; };
 		0B8AF42D1C7DDE7B00068F83 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		0B8AF42E1C7DDE7B00068F83 /* RightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightsViewController.swift; sourceTree = "<group>"; };
-		0B8AF42F1C7DDE7B00068F83 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		0B90686C1C776CFF008CF631 /* Diversidade-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diversidade-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B90686D1C776D00008CF631 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0B90686E1C776D00008CF631 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				0B8AF42C1C7DDE7B00068F83 /* DiscoveringViewController.swift */,
 				0B8AF42D1C7DDE7B00068F83 /* HealthViewController.swift */,
 				0B8AF42E1C7DDE7B00068F83 /* RightsViewController.swift */,
-				0B8AF42F1C7DDE7B00068F83 /* SuggestionsViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -488,7 +485,6 @@
 				0B262EFD1CB6C91900681F5F /* Horary.swift in Sources */,
 				0B8AF4321C7DDE7B00068F83 /* DiscoveringViewController.swift in Sources */,
 				0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */,
-				0B8AF4351C7DDE7B00068F83 /* SuggestionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

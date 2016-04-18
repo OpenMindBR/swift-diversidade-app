@@ -76,7 +76,6 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, GMSMap
         
         if let markerView = views.first as? MarkerInfoView {
             markerView.nameLabel.text = placeMarker.nucleo.name
-            markerView.placePhoto.image = UIImage(named: "health")
             
             return markerView
         }
