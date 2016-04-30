@@ -15,7 +15,7 @@ class Nucleo: NSObject {
     let phone: String
     let email: String
     let urlSite: String
-    let location: CLLocationCoordinate2D
+    let coordinate: CLLocationCoordinate2D
     
     var address: Address?
     var services: [Service]?
@@ -26,7 +26,7 @@ class Nucleo: NSObject {
         self.phone = phone
         self.email = email
         self.urlSite = urlSite
-        self.location = CLLocationCoordinate2D(latitude: xCoord, longitude: yCoord)
+        self.coordinate = CLLocationCoordinate2D(latitude: xCoord, longitude: yCoord)
     }
 
 }

@@ -1,15 +1,12 @@
 PODS:
-  - GoogleMaps (1.13.0)
   - KILabel (1.0.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - GoogleMaps
   - KILabel (= 1.0.0)
   - SwiftyJSON (~> 2.3.0)
 
 SPEC CHECKSUMS:
-  GoogleMaps: 7a6caeb8336d7cb42982e969fc9b1b20a889fe79
   KILabel: 84049969642d4ac1061ebe38ad4c0da37fed108b
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 

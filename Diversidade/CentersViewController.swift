@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import GoogleMaps
+import MapKit
 
-class CentersViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate{
+class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var menuItem: UIBarButtonItem!
-    @IBOutlet weak var googleMapView: GMSMapView!
+    @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
     let searchRadius = 1000
@@ -26,9 +26,10 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, GMSMap
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.distanceFilter  = kCLDistanceFilterNone
-        
         self.locationManager.requestWhenInUseAuthorization()
-        self.googleMapView.delegate = self
+        
+        mapView.showsUserLocation = true
+        mapView.showsCompass = true
         
     }
 
@@ -38,12 +39,33 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, GMSMap
     
     override func viewWillAppear(animated: Bool) {
         if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
-            googleMapView.myLocationEnabled = true
-            googleMapView.settings.myLocationButton = true
-            
             locationManager.startUpdatingLocation()
             locationManager.startMonitoringSignificantLocationChanges()
         }
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if let annotation = annotation as? PlaceAnnotation {
+            
+            let identifier = "pin"
+            var view: MKPinAnnotationView
+            
+            if let dequeedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView {
+                dequeedView.annotation = annotation
+                view = dequeedView
+            }
+            else {
+                view  = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view.canShowCallout = true
+                view.calloutOffset  = CGPoint(x: -5, y: 5)
+                view.pinTintColor   = UIColor(red: 155.0/255, green: 47.0/255, blue: 245.0/255, alpha: 1.0)
+                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
+            }
+            
+            return view
+        }
+        
+        return nil
     }
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -51,45 +73,28 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, GMSMap
         if status == .AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
             locationManager.startMonitoringSignificantLocationChanges()
-            
-            googleMapView.myLocationEnabled = true
-            googleMapView.settings.myLocationButton = true
         }
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            googleMapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-            
             self.fetchPlacesNearCoordinate(location.coordinate)
+            
+            let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
+            mapView.setRegion(region, animated: true)
+            
             
             locationManager.stopUpdatingLocation()
             locationManager.stopMonitoringSignificantLocationChanges()
         }
     }
     
-    func mapView(mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
-        let placeMarker = marker as! PlaceMarker
-        let views = NSBundle.mainBundle().loadNibNamed("MarkerInfoView", owner: nil, options: nil)
-        
-        print (views)
-        
-        if let markerView = views.first as? MarkerInfoView {
-            markerView.nameLabel.text = placeMarker.nucleo.name
-            
-            return markerView
-        }
-        
-        return nil
-    }
-    
     func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D){
-        self.googleMapView.clear()
         self.nucleos = DiscoveringMock.mockPlaces()
         
-        for n:Nucleo in self.nucleos! {
-            let marker = PlaceMarker(nucleo: n)
-            marker.map = self.googleMapView
+        for nucleo: Nucleo in nucleos! {
+            let annotation = PlaceAnnotation(placeName: nucleo.name, placeAddress: "Some Address", coordinate: nucleo.coordinate)
+            mapView.addAnnotation(annotation)
         }
     }
     

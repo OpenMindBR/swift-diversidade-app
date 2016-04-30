@@ -279,7 +279,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEC-bq-FMJ" customClass="KILabel">
-                                                            <rect key="frame" x="0.0" y="45" width="520" height="66"/>
+                                                            <rect key="frame" x="0.0" y="45" width="493" height="66"/>
                                                             <string key="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. http://www.ifce.edu.br</string>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -365,17 +365,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ant-dM-IFE" customClass="GMSMapView">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QCo-FG-jcx">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <connections>
+                                    <outlet property="delegate" destination="Oht-V0-GOp" id="ahL-Sk-wiG"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ant-dM-IFE" secondAttribute="trailing" constant="-20" id="FiN-Q1-5b9"/>
-                            <constraint firstItem="Ant-dM-IFE" firstAttribute="leading" secondItem="Xoz-BS-g5B" secondAttribute="leadingMargin" constant="-20" id="MBE-29-Gqm"/>
-                            <constraint firstItem="Ant-dM-IFE" firstAttribute="top" secondItem="hap-Ap-HbW" secondAttribute="bottom" id="WLt-7E-cOM"/>
-                            <constraint firstItem="oYk-MD-VxI" firstAttribute="top" secondItem="Ant-dM-IFE" secondAttribute="bottom" id="oqN-2K-o9s"/>
+                            <constraint firstItem="QCo-FG-jcx" firstAttribute="leading" secondItem="Xoz-BS-g5B" secondAttribute="leadingMargin" constant="-20" id="1nX-hY-VZy"/>
+                            <constraint firstItem="QCo-FG-jcx" firstAttribute="bottom" secondItem="oYk-MD-VxI" secondAttribute="top" id="F1W-Hi-v6y"/>
+                            <constraint firstItem="QCo-FG-jcx" firstAttribute="top" secondItem="hap-Ap-HbW" secondAttribute="bottom" id="byS-IP-YLw"/>
+                            <constraint firstItem="QCo-FG-jcx" firstAttribute="centerX" secondItem="Xoz-BS-g5B" secondAttribute="centerX" id="rTV-ca-1iA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Núcleos" id="dm2-1h-tDe">
@@ -384,7 +386,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="googleMapView" destination="Ant-dM-IFE" id="rq8-3c-1wW"/>
+                        <outlet property="mapView" destination="QCo-FG-jcx" id="7kP-XD-23C"/>
                         <outlet property="menuItem" destination="qkZ-AO-Xel" id="rKK-G2-4Nw"/>
                         <segue destination="Raz-Fh-acg" kind="show" identifier="toDetalheNucleo" id="Rsh-kZ-2iq"/>
                     </connections>
@@ -836,7 +838,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axu-Fy-6Et" customClass="KILabel">
-                                                            <rect key="frame" x="0.0" y="45" width="520" height="66"/>
+                                                            <rect key="frame" x="0.0" y="45" width="493" height="66"/>
                                                             <string key="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. http://www.ifce.edu.br</string>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -939,7 +941,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiD-xU-rKv" customClass="KILabel">
-                                                            <rect key="frame" x="0.0" y="45" width="520" height="66"/>
+                                                            <rect key="frame" x="0.0" y="45" width="493" height="66"/>
                                                             <string key="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. http://www.ifce.edu.br</string>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
