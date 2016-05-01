@@ -26,6 +26,7 @@
 		0B90686F1C776D00008CF631 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90686E1C776D00008CF631 /* SWRevealViewController.m */; };
 		0B94E6351C88A30F00DDD703 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B94E6341C88A30F00DDD703 /* Post.swift */; };
 		0BB36CA01CD572360008DF61 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB36C9F1CD572360008DF61 /* PlaceAnnotation.swift */; };
+		0BB36CA21CD585210008DF61 /* UrlFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB36CA11CD585210008DF61 /* UrlFormatter.swift */; };
 		0BCAE5131CB5833C0055136F /* DetailCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAE5121CB5833C0055136F /* DetailCenterViewController.swift */; };
 		0BD3F6E01C77443900FAFFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */; };
 		0BD3F6E51C77443900FAFFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3F6E31C77443900FAFFD9 /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		0B90686E1C776D00008CF631 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		0B94E6341C88A30F00DDD703 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0BB36C9F1CD572360008DF61 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		0BB36CA11CD585210008DF61 /* UrlFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlFormatter.swift; sourceTree = "<group>"; };
 		0BCAE5121CB5833C0055136F /* DetailCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCenterViewController.swift; sourceTree = "<group>"; };
 		0BD3F6DC1C77443900FAFFD9 /* Diversidade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diversidade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3F6DF1C77443900FAFFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				0B8AF4281C7DDBA400068F83 /* SideMenuExtension.swift */,
 				0BE767941C8F4E3D0013843B /* Developers.plist */,
 				0BD7C5281C949C74005A21E1 /* PostType.swift */,
+				0BB36CA11CD585210008DF61 /* UrlFormatter.swift */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				0BB36CA01CD572360008DF61 /* PlaceAnnotation.swift in Sources */,
 				0BD3F6E81C77443900FAFFD9 /* Diversidade.xcdatamodeld in Sources */,
 				0BD3F6E01C77443900FAFFD9 /* AppDelegate.swift in Sources */,
+				0BB36CA21CD585210008DF61 /* UrlFormatter.swift in Sources */,
 				0BCAE5131CB5833C0055136F /* DetailCenterViewController.swift in Sources */,
 				0B8AF4291C7DDBA400068F83 /* SideMenuExtension.swift in Sources */,
 				0B262EFD1CB6C91900681F5F /* Horary.swift in Sources */,

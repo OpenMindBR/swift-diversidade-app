@@ -6,6 +6,7 @@ use_frameworks!
 target 'Diversidade' do
     pod 'KILabel', '1.0.0'
     pod 'SwiftyJSON', '~> 2.3.0'
+    pod 'Alamofire', '~> 3.3'
 end
 
 target 'DiversidadeTests' do

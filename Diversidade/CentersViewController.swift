@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import Alamofire
+import SwiftyJSON
 
 class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
@@ -44,6 +46,28 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         }
     }
     
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        
+        if status == .AuthorizedWhenInUse {
+            locationManager.startUpdatingLocation()
+            locationManager.startMonitoringSignificantLocationChanges()
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            
+            self.fetchPlacesForRegion("CE")
+            
+            let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 6000, 6000)
+            mapView.setRegion(region, animated: true)
+            
+            
+            locationManager.stopUpdatingLocation()
+            locationManager.stopMonitoringSignificantLocationChanges()
+        }
+    }
+    
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? PlaceAnnotation {
             
@@ -68,35 +92,39 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         return nil
     }
     
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func fetchPlacesForRegion(region: String){
         
-        if status == .AuthorizedWhenInUse {
-            locationManager.startUpdatingLocation()
-            locationManager.startMonitoringSignificantLocationChanges()
+        let requestUrl = "http://diversidade-cloudsocial.rhcloud.com/api/v1/centers?state=\(region)"
+        
+        Alamofire.request(.GET, requestUrl).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json: Array<JSON> = JSON(value).arrayValue
+                    
+                    let places = json.map({ (nucleo) -> PlaceAnnotation in
+                        
+                        let name = nucleo["name"].stringValue
+                        let address = nucleo["address"].stringValue
+                        let latitude = nucleo["latitude"].doubleValue
+                        let longitude = nucleo["longitude"].doubleValue
+                        let coord = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                        
+                        return PlaceAnnotation(placeName: name, placeAddress: address, coordinate: coord)
+                    })
+                    
+                    self.mapView.addAnnotations(places)
+                }
+                
+            case .Failure(let error):
+                print(error)
+                
+            }
         }
+        
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            self.fetchPlacesNearCoordinate(location.coordinate)
-            
-            let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
-            mapView.setRegion(region, animated: true)
-            
-            
-            locationManager.stopUpdatingLocation()
-            locationManager.stopMonitoringSignificantLocationChanges()
-        }
-    }
     
-    func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D){
-        self.nucleos = DiscoveringMock.mockPlaces()
-        
-        for nucleo: Nucleo in nucleos! {
-            let annotation = PlaceAnnotation(placeName: nucleo.name, placeAddress: "Some Address", coordinate: nucleo.coordinate)
-            mapView.addAnnotation(annotation)
-        }
-    }
     
     /*
     // MARK: - Navigation
