@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class RightsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var postsTableView: UITableView!
     @IBOutlet weak var menuItem: UIBarButtonItem!
+    @IBOutlet weak var loadingPostsIndicator: UIActivityIndicatorView!
     
     var datasource:[Post]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datasource = []
         self.configureSideMenu(self.menuItem)
+        self.retrieveRightsPosts()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,21 +50,42 @@ class RightsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let content = datasource[indexPath.row]
             
             cell.titleLabel.text = content.title
-            cell.dateLabel.text  = content.date
             cell.postTextLabel.text = content.text
         }
         
         return cell
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 143.0
     }
-    */
+    
+    func retrieveRightsPosts() {
+        let requestString = UrlFormatter.urlForNewsFromCategory(Category.Rights)
+        
+        Alamofire.request(.GET, requestString).validate().responseJSON { (response) in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json: Array<JSON> = JSON(value).arrayValue
+                    
+                    let posts: [Post] = json.map({ (post) -> Post in
+                        let text = post["text"].stringValue
+                        let title = post["title"].stringValue
+                        
+                        
+                        return Post(title: title, date: "", text: text)
+                    })
+                    
+                    self.datasource = posts
+                    self.loadingPostsIndicator.stopAnimating()
+                    self.postsTableView.reloadData()
+                }
+                
+            case .Failure:
+                print (response.result.error)
+            }
+        }
+    }
 
 }

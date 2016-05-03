@@ -12,6 +12,20 @@ enum Category: String {
     case Discovering = "discovering"
     case Health = "health"
     case Rights = "rights"
+    
+    var description : String {
+        switch self {
+            
+        case .Discovering:
+            return "discovering"
+            
+        case .Health:
+            return "health"
+            
+        case .Rights:
+            return "rights"
+        }
+    }
 }
 
 class UrlFormatter {
@@ -25,6 +39,6 @@ class UrlFormatter {
     }
     
     static func urlForNewsFromCategory(category: Category) -> String {
-        return "http://diversidade-cloudsocial.rhcloud.com/api/v1/news/categories/\(category)"
+        return "http://diversidade-cloudsocial.rhcloud.com/api/v1/news/categories/\(category.description)"
     }
 }

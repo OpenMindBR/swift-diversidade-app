@@ -57,11 +57,19 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             
-            self.fetchPlacesForRegion("CE")
+            let geocoder = CLGeocoder()
+            
+            geocoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) in
+                if let placemark = placemarks?.first,
+                    let state = placemark.administrativeArea {
+                    
+                    self.fetchPlacesForRegion(state)
+                }
+                
+            })
             
             let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 6000, 6000)
             mapView.setRegion(region, animated: true)
-            
             
             locationManager.stopUpdatingLocation()
             locationManager.stopMonitoringSignificantLocationChanges()
@@ -94,10 +102,11 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     func fetchPlacesForRegion(region: String){
         
-        let requestUrl = "http://diversidade-cloudsocial.rhcloud.com/api/v1/centers?state=\(region)"
+        let requestUrl = UrlFormatter.urlForCentersWithState(region)
         
         Alamofire.request(.GET, requestUrl).validate().responseJSON { response in
             switch response.result {
+            
             case .Success:
                 if let value = response.result.value {
                     let json: Array<JSON> = JSON(value).arrayValue
@@ -118,7 +127,6 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 
             case .Failure(let error):
                 print(error)
-                
             }
         }
         

@@ -10,13 +10,11 @@ import UIKit
 
 class Post {
     
-    let category: PostType
     let title: String?
     let date: String?
     let text: String?
     
-    init(category: PostType, title: String, date:String, text: String) {
-        self.category = category
+    init(title: String, date:String, text: String) {
         self.title = title
         self.date  = date
         self.text  = text
