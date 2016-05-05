@@ -7,20 +7,24 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class DetailCenterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var centerProfileImage: UIImageView!
     @IBOutlet weak var centerCoverPicture: UIImageView!
     @IBOutlet weak var centerNameLabel: UILabel!
-    @IBOutlet weak var centerPhoneLabel: UILabel!
+    @IBOutlet weak var centerPhoneLabel: UITextView!
     
     @IBOutlet weak var optionsSegmentedControl: UISegmentedControl!
     @IBOutlet weak var tableview: UITableView!
     
     var center: Nucleo?
+    var centerId: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        retrieveCenterDetails()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,51 +37,184 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         var sections = 1
         
-        if self.optionsSegmentedControl.selectedSegmentIndex == 0 {
-            sections = 2
+        switch optionsSegmentedControl.selectedSegmentIndex {
+            case 0:
+                sections = 2
+            
+            default:
+                sections = 1
         }
         
         return sections
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         var rows = 0
         
-        if optionsSegmentedControl.selectedSegmentIndex == 0 {
-            rows = 2
-        }
-        else if optionsSegmentedControl.selectedSegmentIndex == 1 {
+        switch optionsSegmentedControl.selectedSegmentIndex {
+        case 0:
+            
+            if section == 0 {
+                rows = 1
+            }
+            else {
+                if let center = center, let horary = center.horary {
+                    rows = horary.count
+                }
+                else {
+                    rows = 0
+                }
+            }
+            
+        case 1:
             
             if let center = self.center, let services = center.services {
                 rows = services.count
             }
-        }
-        else {
-            //TODO number of comments here...
+            else {
+                rows = 0
+            }
+            
+        default:
             rows = 0
         }
-        
         
         return rows;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
-//        if let center = self.center {
-//            
-//            if self.optionsSegmentedControl.selectedSegmentIndex == 0 {
-//                
-//                if indexPath.row == 0 {
-//                    
-//                    let cell = tableview.dequeueReusableCellWithIdentifier("addressCell")
-//                }
-//            }
-//            
-//            
-//        }
+        switch optionsSegmentedControl.selectedSegmentIndex {
+        case 0:
+            
+            if indexPath.section == 0 {
+                let cell = tableView.dequeueReusableCellWithIdentifier("basicCell") as UITableViewCell!
+                cell.textLabel?.text = center?.address
+                return cell
+            }
+            else {
+                let cell = tableView.dequeueReusableCellWithIdentifier("cellsubdatail") as UITableViewCell!
+                
+                if let center = self.center, let horaries = center.horary {
+                    cell.textLabel?.text = horaries[indexPath.row].day
+                    cell.detailTextLabel?.text = horaries[indexPath.row].time
+                }
+                
+                return cell
+            }
+            
+        case 1:
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellsubdatail") as UITableViewCell!
+            
+            if let center = self.center, let services = center.services {
+                cell.textLabel?.text = services[indexPath.row].title
+                cell.detailTextLabel?.text = services[indexPath.row].description
+            }
+            
+            return cell
+            
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch optionsSegmentedControl.selectedSegmentIndex {
+        case 0:
+            if section == 0 {
+                return "Endereço"
+            }
+            else {
+                return "Horário de Funcionamento"
+            }
+            
+        case 1:
+            return "Serviços Prestados"
+            
+        case 3:
+            return "Comentários "
         
-        return tableView.dequeueReusableCellWithIdentifier("textCell")!;
+        default:
+            return ""
+        }
+    }
+    
+    @IBAction func changeInfoOption(sender: AnyObject) {
+        
+        UIView.transitionWithView(tableview, duration: 0.40, options: .TransitionCrossDissolve, animations: { 
+            self.tableview.reloadData()
+            }, completion: nil)
+        
+        tableview.reloadData()
+    }
+    
+    @IBAction func onNewCommentTap(sender: AnyObject) {
+        performSegueWithIdentifier("newCommentSegue", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "newCommentSegue" {
+            let destinationViewController = segue.destinationViewController as! NewCommentViewController
+            
+            destinationViewController.centerId = self.centerId
+        }
+    }
+    
+    func retrieveCenterDetails() {
+        
+        if let id = self.centerId {
+            let requestUrl = UrlFormatter.urlForCenterDetailsWithId(String(id))
+            
+            Alamofire.request(.GET, requestUrl).validate().responseJSON(completionHandler: { (response) in
+                
+                switch response.result {
+                case .Success:
+                    
+                    if let value = response.result.value {
+                        let json = JSON(value).dictionaryValue
+                        
+                        print(json)
+                        
+                        let id = json["id"]!.stringValue
+                        let name = json["name"]!.stringValue
+                        let phone = json["phone"]!.stringValue
+                        let address = json["address"]!.stringValue
+                        
+                        let operating_hours = json["operating_hours"]!.arrayValue
+                        let services = json["services"]!.arrayValue
+                    
+                        
+                        let nucleo = Nucleo(id: id, name: name, address: address, phone: phone)
+                        
+                        nucleo.horary = operating_hours.map({ (operatingHour) -> Horary in
+                            let dayOfWeek = operatingHour["day_of_week"].stringValue
+                            let hour = operatingHour["hour"].stringValue
+                            
+                            return Horary(day: dayOfWeek, time: hour)
+                        })
+                        
+                        nucleo.services = services.map({ (service) -> Service in
+                            let name = service["name"].stringValue
+                            let desc = service["description"].stringValue
+                            
+                            return Service(title: name, description: desc)
+                        })
+                        
+                        
+                        self.centerNameLabel.text  = nucleo.name
+                        self.centerPhoneLabel.text = nucleo.phone
+                        self.centerPhoneLabel.linkTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor(), NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue]
+                        
+                        self.center = nucleo
+                        self.tableview.reloadData()
+                    }
+                    
+                case .Failure:
+                    print (response.result.error)
+                }
+                
+            })
+        }
     }
 
 }

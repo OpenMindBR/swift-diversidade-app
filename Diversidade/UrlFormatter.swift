@@ -41,4 +41,12 @@ class UrlFormatter {
     static func urlForNewsFromCategory(category: Category) -> String {
         return "http://diversidade-cloudsocial.rhcloud.com/api/v1/news/categories/\(category.description)"
     }
+    
+    static func urlForCommentPost(centerId: Int?) -> String{
+        if let id = centerId{
+            return "http://diversidade-cloudsocial.rhcloud.com/api/v1/centers/\(id)/comments"
+        }
+        
+        return ""
+    }
 }

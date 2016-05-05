@@ -88,10 +88,15 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
             }
             else {
                 view  = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                let button = UIButton(type: .DetailDisclosure)
+                button.addTarget(self, action: #selector(CentersViewController.onDisclosureButtonTap(_:)), forControlEvents: .TouchUpInside)
+                button.tag = Int(annotation.placeId)!
+                
                 view.canShowCallout = true
                 view.calloutOffset  = CGPoint(x: -5, y: 5)
                 view.pinTintColor   = UIColor(red: 155.0/255, green: 47.0/255, blue: 245.0/255, alpha: 1.0)
-                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
+                view.rightCalloutAccessoryView = button as UIView
+                
             }
             
             return view
@@ -112,14 +117,14 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                     let json: Array<JSON> = JSON(value).arrayValue
                     
                     let places = json.map({ (nucleo) -> PlaceAnnotation in
-                        
+                        let id = nucleo["id"].stringValue
                         let name = nucleo["name"].stringValue
                         let address = nucleo["address"].stringValue
                         let latitude = nucleo["latitude"].doubleValue
                         let longitude = nucleo["longitude"].doubleValue
                         let coord = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
                         
-                        return PlaceAnnotation(placeName: name, placeAddress: address, coordinate: coord)
+                        return PlaceAnnotation(placeId: id, placeName: name, placeAddress: address, coordinate: coord)
                     })
                     
                     self.mapView.addAnnotations(places)
@@ -132,16 +137,16 @@ class CentersViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         
     }
     
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func onDisclosureButtonTap(sender: UIButton) {
+        performSegueWithIdentifier("toDetalheNucleo", sender: sender.tag)
     }
-    */
+    
+    
+    // MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let viewController = segue.destinationViewController as? DetailCenterViewController {
+            viewController.centerId = sender as? Int
+        }
+    }
 
 }

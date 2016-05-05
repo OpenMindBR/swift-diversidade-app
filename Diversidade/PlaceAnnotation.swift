@@ -10,11 +10,13 @@ import UIKit
 import MapKit
 
 class PlaceAnnotation: NSObject, MKAnnotation {
+    let placeId: String
     let placeName: String
     let placeAddress: String
     let coordinate: CLLocationCoordinate2D
     
-    init(placeName: String, placeAddress: String, coordinate: CLLocationCoordinate2D) {
+    init(placeId: String, placeName: String, placeAddress: String, coordinate: CLLocationCoordinate2D) {
+        self.placeId = placeId
         self.placeName = placeName
         self.placeAddress = placeAddress
         self.coordinate = coordinate
