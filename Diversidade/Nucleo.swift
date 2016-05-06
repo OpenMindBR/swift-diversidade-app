@@ -21,6 +21,7 @@ class Nucleo: NSObject {
     var address: String?
     var services: [Service]?
     var horary: [Horary]?
+    var comments: [Comment]?
     var coordinate: CLLocationCoordinate2D?
 
     init(id: String, name: String, phone: String, email: String, urlSite: String, xCoord:CLLocationDegrees , yCoord: CLLocationDegrees) {

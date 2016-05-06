@@ -9,13 +9,11 @@
 import UIKit
 
 class Comment {
-    let username: String
-    let date: String
+    let name: String
     let text: String
     
-    init(username: String, date: String, text: String) {
-        self.username = username
-        self.date = date
+    init(name: String, text: String) {
+        self.name = name
         self.text = text
     }
 }

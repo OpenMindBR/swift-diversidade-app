@@ -423,8 +423,8 @@
                                     <constraint firstAttribute="width" secondItem="aTY-Lm-K4W" secondAttribute="height" multiplier="1:1" id="HGt-j4-xHq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aET-Li-Osk">
-                                <rect key="frame" x="124" y="84" width="456" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do Núcleo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aET-Li-Osk">
+                                <rect key="frame" x="124" y="84" width="456" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -486,14 +486,60 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPost" rowHeight="143" id="VZS-0L-mJo" customClass="PostTableViewCell" customModule="Diversidade" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="137.5" width="600" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VZS-0L-mJo" id="zEu-AV-kwm">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="142.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collaboration" translatesAutoresizingMaskIntoConstraints="NO" id="gb8-N0-XGh">
+                                                    <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="PSV-ed-6Di"/>
+                                                        <constraint firstAttribute="height" constant="40" id="dyN-pH-ZOv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Text Here..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDt-30-uWj">
+                                                    <rect key="frame" x="64" y="16" width="520" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pw8-xW-fJ9" customClass="KILabel">
+                                                    <rect key="frame" x="64" y="45" width="520" height="67"/>
+                                                    <string key="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. http://www.ifce.edu.br</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aDt-30-uWj" firstAttribute="leading" secondItem="gb8-N0-XGh" secondAttribute="trailing" constant="8" id="EYf-n8-jQe"/>
+                                                <constraint firstItem="pw8-xW-fJ9" firstAttribute="leading" secondItem="aDt-30-uWj" secondAttribute="leading" id="Xmw-D2-Dc1"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="pw8-xW-fJ9" secondAttribute="bottom" constant="8" id="bWL-o0-sB0"/>
+                                                <constraint firstItem="pw8-xW-fJ9" firstAttribute="top" secondItem="aDt-30-uWj" secondAttribute="bottom" constant="8" id="cSQ-Hi-lR0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aDt-30-uWj" secondAttribute="trailing" constant="8" id="qae-rg-HBC"/>
+                                                <constraint firstItem="aDt-30-uWj" firstAttribute="top" secondItem="zEu-AV-kwm" secondAttribute="topMargin" constant="8" id="qf5-e8-3g8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pw8-xW-fJ9" secondAttribute="trailing" constant="8" id="wRO-N7-sbI"/>
+                                                <constraint firstItem="gb8-N0-XGh" firstAttribute="top" secondItem="zEu-AV-kwm" secondAttribute="topMargin" constant="8" id="yT2-Sb-iaH"/>
+                                                <constraint firstItem="gb8-N0-XGh" firstAttribute="leading" secondItem="zEu-AV-kwm" secondAttribute="leadingMargin" constant="8" id="yY0-ym-AhO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="gb8-N0-XGh" id="X2F-8D-eC5"/>
+                                            <outlet property="postTextLabel" destination="pw8-xW-fJ9" id="fNz-PS-1xg"/>
+                                            <outlet property="titleLabel" destination="aDt-30-uWj" id="2ND-oY-6q6"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Raz-Fh-acg" id="kY9-ie-nK8"/>
                                     <outlet property="delegate" destination="Raz-Fh-acg" id="zDh-fj-QHe"/>
                                 </connections>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="ajajajaj" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-SS-MMe">
-                                <rect key="frame" x="120" y="108.5" width="460" height="25"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Telefone do Núcleo" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-SS-MMe">
+                                <rect key="frame" x="120" y="108.5" width="460" height="35.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="zIk-LK-bKw"/>
@@ -763,8 +809,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="something@email.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLY-2W-ZeU">
-                                <rect key="frame" x="223" y="172" width="154.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="francisceioseph@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLY-2W-ZeU">
+                                <rect key="frame" x="205" y="172" width="191" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1031,6 +1077,7 @@
     </scenes>
     <resources>
         <image name="background_fog" width="682" height="338"/>
+        <image name="collaboration" width="50" height="50"/>
         <image name="discovering" width="40" height="40"/>
         <image name="diversidade" width="736" height="544"/>
         <image name="diversidade_splash" width="500" height="500"/>

@@ -75,6 +75,15 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                 rows = 0
             }
             
+        case 2:
+            if let center = self.center, let comments = center.comments {
+                rows = comments.count
+            }
+            else {
+                rows = 0
+            }
+
+            
         default:
             rows = 0
         }
@@ -113,6 +122,16 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
             
             return cell
             
+        case 2:
+            let cell = tableview.dequeueReusableCellWithIdentifier("cellPost") as! PostTableViewCell
+            
+            if let center = self.center, let comments = center.comments {
+                cell.titleLabel.text    = comments[indexPath.row].name
+                cell.postTextLabel.text = comments[indexPath.row].text
+            }
+            
+            return cell
+            
         default:
             return UITableViewCell()
         }
@@ -131,7 +150,7 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
         case 1:
             return "Serviços Prestados"
             
-        case 3:
+        case 2:
             return "Comentários "
         
         default:
@@ -139,13 +158,29 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-    @IBAction func changeInfoOption(sender: AnyObject) {
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 500.0
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    @IBAction func changeInfoOption(sender: UISegmentedControl) {
         
-        UIView.transitionWithView(tableview, duration: 0.40, options: .TransitionCrossDissolve, animations: { 
-            self.tableview.reloadData()
-            }, completion: nil)
+        if (sender.selectedSegmentIndex == 2) {
+            retrieveCommentsForCenter()
+        }
+        else {
+            UIView.transitionWithView(tableview,
+                                      duration: 0.40,
+                                      options: .TransitionCrossDissolve,
+                                      animations: {
+                                        self.tableview.reloadData()
+                                      },
+                                      completion: nil)
+        }
         
-        tableview.reloadData()
     }
     
     @IBAction func onNewCommentTap(sender: AnyObject) {
@@ -215,6 +250,31 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                 
             })
         }
+    }
+    
+    func retrieveCommentsForCenter() {
+        let requestUrl = UrlFormatter.urlForCommentPost(centerId)
+        Alamofire.request(.GET, requestUrl).validate().responseJSON(completionHandler: { (response) in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value).arrayValue
+                    
+                    self.center?.comments = json.map({ (commentJson) -> Comment in
+                        let name = commentJson["name"].stringValue
+                        let text = commentJson["text"].stringValue
+                        
+                        return Comment(name: name, text: text)
+                    })
+                    
+                    self.tableview.reloadData()
+                }
+                
+            case .Failure:
+                print(response.result.error)
+            }
+            
+        })
     }
 
 }

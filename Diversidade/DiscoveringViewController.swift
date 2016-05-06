@@ -58,8 +58,12 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
         return cell
     }
     
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 500.0
+    }
+    
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 143.0
+        return UITableViewAutomaticDimension
     }
     
     func retrieveDiscoveringPosts() {
