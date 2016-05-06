@@ -423,7 +423,7 @@
                                     <constraint firstAttribute="width" secondItem="aTY-Lm-K4W" secondAttribute="height" multiplier="1:1" id="HGt-j4-xHq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do Núcleo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aET-Li-Osk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aET-Li-Osk">
                                 <rect key="frame" x="124" y="84" width="456" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -538,7 +538,7 @@
                                     <outlet property="delegate" destination="Raz-Fh-acg" id="zDh-fj-QHe"/>
                                 </connections>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Telefone do Núcleo" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-SS-MMe">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-SS-MMe">
                                 <rect key="frame" x="120" y="108.5" width="460" height="35.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -548,6 +548,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                             </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-ij-c5k">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -562,10 +566,12 @@
                             <constraint firstItem="aTY-Lm-K4W" firstAttribute="leading" secondItem="h5z-LF-hh2" secondAttribute="leading" constant="20" id="HXp-Xd-P5c"/>
                             <constraint firstItem="bKy-x5-BNR" firstAttribute="leading" secondItem="DZx-nD-Yjv" secondAttribute="leadingMargin" constant="-20" id="KZD-5G-nM5"/>
                             <constraint firstItem="LTz-va-dHJ" firstAttribute="top" secondItem="h5z-LF-hh2" secondAttribute="bottom" constant="8" id="MKK-vA-fCl"/>
+                            <constraint firstItem="LHw-ij-c5k" firstAttribute="centerX" secondItem="DZx-nD-Yjv" secondAttribute="centerX" id="SPB-T8-MKR"/>
                             <constraint firstItem="aTY-Lm-K4W" firstAttribute="centerY" secondItem="h5z-LF-hh2" secondAttribute="centerY" constant="-5.5" id="Tnk-hF-4Jd"/>
                             <constraint firstItem="4tP-SS-MMe" firstAttribute="leading" secondItem="aTY-Lm-K4W" secondAttribute="trailing" constant="8" id="WSv-tc-iun"/>
                             <constraint firstItem="h5z-LF-hh2" firstAttribute="centerX" secondItem="DZx-nD-Yjv" secondAttribute="centerX" id="eyh-wj-8J7"/>
                             <constraint firstItem="aTY-Lm-K4W" firstAttribute="top" secondItem="h5z-LF-hh2" secondAttribute="top" constant="20" id="hA2-9N-521"/>
+                            <constraint firstItem="LHw-ij-c5k" firstAttribute="centerY" secondItem="DZx-nD-Yjv" secondAttribute="centerY" id="kNA-Ku-A1x"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bKy-x5-BNR" secondAttribute="trailing" constant="-20" id="mCI-MQ-5iR"/>
                             <constraint firstItem="bKy-x5-BNR" firstAttribute="top" secondItem="LTz-va-dHJ" secondAttribute="bottom" constant="8" id="wLs-fz-a94"/>
                             <constraint firstItem="4tP-SS-MMe" firstAttribute="top" secondItem="aET-Li-Osk" secondAttribute="bottom" constant="4" id="yxR-w6-Lq2"/>
@@ -585,6 +591,7 @@
                         <outlet property="centerNameLabel" destination="aET-Li-Osk" id="sZA-Xy-tM4"/>
                         <outlet property="centerPhoneLabel" destination="4tP-SS-MMe" id="uc5-bt-6DD"/>
                         <outlet property="centerProfileImage" destination="aTY-Lm-K4W" id="aYv-YS-Qxo"/>
+                        <outlet property="loadingActivityIndicator" destination="LHw-ij-c5k" id="AZX-eN-rm4"/>
                         <outlet property="optionsSegmentedControl" destination="LTz-va-dHJ" id="y0E-ga-der"/>
                         <outlet property="tableview" destination="bKy-x5-BNR" id="fjh-Ch-iCW"/>
                         <segue destination="sjX-ra-a8I" kind="popoverPresentation" identifier="newCommentSegue" popoverAnchorView="DZx-nD-Yjv" id="LWP-qx-z4D">

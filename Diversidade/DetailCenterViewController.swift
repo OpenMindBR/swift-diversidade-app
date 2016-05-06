@@ -11,11 +11,11 @@ import Alamofire
 import SwiftyJSON
 
 class DetailCenterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var centerProfileImage: UIImageView!
     @IBOutlet weak var centerCoverPicture: UIImageView!
     @IBOutlet weak var centerNameLabel: UILabel!
     @IBOutlet weak var centerPhoneLabel: UITextView!
-    
     @IBOutlet weak var optionsSegmentedControl: UISegmentedControl!
     @IBOutlet weak var tableview: UITableView!
     
@@ -24,6 +24,9 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.centerProfileImage.layer.cornerRadius = 12.0
+        self.centerProfileImage.layer.masksToBounds = true
         retrieveCenterDetails()
     }
 
@@ -168,7 +171,8 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBAction func changeInfoOption(sender: UISegmentedControl) {
         
-        if (sender.selectedSegmentIndex == 2) {
+        if (sender.selectedSegmentIndex == 2 && center?.comments == nil) {
+            loadingActivityIndicator.startAnimating()
             retrieveCommentsForCenter()
         }
         else {
@@ -207,9 +211,7 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                     
                     if let value = response.result.value {
                         let json = JSON(value).dictionaryValue
-                        
-                        print(json)
-                        
+    
                         let id = json["id"]!.stringValue
                         let name = json["name"]!.stringValue
                         let phone = json["phone"]!.stringValue
@@ -235,17 +237,31 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                             return Service(title: name, description: desc)
                         })
                         
-                        
+                        self.loadingActivityIndicator.stopAnimating()
+                        self.centerPhoneLabel.linkTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor(), NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue]
+
                         self.centerNameLabel.text  = nucleo.name
                         self.centerPhoneLabel.text = nucleo.phone
-                        self.centerPhoneLabel.linkTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor(), NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue]
                         
                         self.center = nucleo
                         self.tableview.reloadData()
                     }
                     
                 case .Failure:
-                    print (response.result.error)
+                    self.loadingActivityIndicator.stopAnimating()
+                    
+                    let alert = UIAlertController(title: "Erro", message: "Não foi possível obter as informações do servidor.", preferredStyle: .Alert)
+                    let realodAction = UIAlertAction(title: "Reload", style: .Default, handler: { (action) in
+                        self.retrieveCenterDetails()
+                    })
+                    let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: { (action) in
+                        self.navigationController?.popViewControllerAnimated(true)
+                    })
+                    
+                    alert.addAction(realodAction)
+                    alert.addAction(cancelAction)
+                    
+                    self.presentViewController(alert, animated: true, completion: nil)
                 }
                 
             })
@@ -267,11 +283,26 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                         return Comment(name: name, text: text)
                     })
                     
+                    self.loadingActivityIndicator.stopAnimating()
                     self.tableview.reloadData()
                 }
                 
             case .Failure:
-                print(response.result.error)
+                self.loadingActivityIndicator.stopAnimating()
+                
+                let alert = UIAlertController(title: "Erro", message: "Não foi possível obter as informações do servidor.", preferredStyle: .Alert)
+                let realodAction = UIAlertAction(title: "Reload", style: .Default, handler: { (action) in
+                    self.retrieveCommentsForCenter()
+                })
+                let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: { (action) in
+                    alert.dismissViewControllerAnimated(true, completion: nil)
+                })
+                
+                alert.addAction(realodAction)
+                alert.addAction(cancelAction)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+                
             }
             
         })
