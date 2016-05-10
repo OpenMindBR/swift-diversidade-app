@@ -27,7 +27,7 @@ Colabore com novas funcionalidades e venha aprimorar essa ferramenta de Cidadani
 ## Estado Atual do Projeto
 
 <p align="left">
-  <img src="https://cloud.githubusercontent.com/assets/6030656/14613580/547e0126-0573-11e6-9134-7c4ee64d9922.jpg" width="500"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160766/b9e55d88-16d1-11e6-956b-2b5cf1e8d91e.png" width="500"/>
   <img src="https://cloud.githubusercontent.com/assets/6030656/15160347/98ba0bf6-16cf-11e6-9d34-1928312b0c00.png" width="500"/>
 </p>
 
@@ -54,7 +54,7 @@ Colabore com novas funcionalidades e venha aprimorar essa ferramenta de Cidadani
   <img src="https://cloud.githubusercontent.com/assets/6030656/15160341/9896d992-16cf-11e6-8c6b-4a5aaf7ddf51.png" width="500"/>
 </p>
 
-**Veja alguns textos sobre Descobrindo-se LGBTT **
+**Veja alguns textos sobre Descobrindo-se LGBTT**
 <p align="left">
   <img src="https://cloud.githubusercontent.com/assets/6030656/15160338/9892e8d2-16cf-11e6-9fa5-e8659707f519.png" width="500"/>
   <img src="https://cloud.githubusercontent.com/assets/6030656/15160342/98a33f70-16cf-11e6-99f6-fb059d3d26fe.png" width="500"/>
@@ -74,3 +74,5 @@ Colabore com novas funcionalidades e venha aprimorar essa ferramenta de Cidadani
 ## Contato
 
 <francisceioseph@gmail.com>
+
+## Licença 
