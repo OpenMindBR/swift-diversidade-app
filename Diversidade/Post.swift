@@ -11,12 +11,12 @@ import UIKit
 class Post {
     
     let title: String?
-    let date: String?
+    let url: String?
     let text: String?
     
-    init(title: String, date:String, text: String) {
+    init(title: String, url:String, text: String) {
         self.title = title
-        self.date  = date
+        self.url   = url
         self.text  = text
     }
 }

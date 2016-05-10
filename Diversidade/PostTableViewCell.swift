@@ -10,26 +10,7 @@ import UIKit
 import KILabel
 
 class PostTableViewCell: UITableViewCell {
-
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var postTextLabel: KILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        self.postTextLabel.urlLinkTapHandler = {
-            (label, urlString, range) in
-            
-            if let url = NSURL(string: urlString){
-                UIApplication.sharedApplication().openURL(url)
-            }
-            
-        }
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-
 }

@@ -61,12 +61,7 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                 rows = 1
             }
             else {
-                if let center = center, let horary = center.horary {
-                    rows = horary.count
-                }
-                else {
-                    rows = 0
-                }
+                rows = 3
             }
             
         case 1:
@@ -105,11 +100,23 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                 return cell
             }
             else {
-                let cell = tableView.dequeueReusableCellWithIdentifier("cellsubdatail") as UITableViewCell!
+                let cell = tableView.dequeueReusableCellWithIdentifier("rightDetailCell") as UITableViewCell!
                 
-                if let center = self.center, let horaries = center.horary {
-                    cell.textLabel?.text = horaries[indexPath.row].day
-                    cell.detailTextLabel?.text = horaries[indexPath.row].time
+                switch indexPath.row {
+                case 0:
+                    cell.textLabel?.text = "Email"
+                    cell.detailTextLabel?.text = center?.email
+                    
+                case 1:
+                    cell.textLabel?.text = "Telefone"
+                    cell.detailTextLabel?.text = center?.phone
+                
+                case 2:
+                    cell.textLabel?.text = "Site"
+                    cell.detailTextLabel?.text = center?.urlSite
+                    
+                default:
+                    break
                 }
                 
                 return cell
@@ -147,7 +154,7 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                 return "Endereço"
             }
             else {
-                return "Horário de Funcionamento"
+                return "Contatos"
             }
             
         case 1:
@@ -211,24 +218,17 @@ class DetailCenterViewController: UIViewController, UITableViewDelegate, UITable
                     
                     if let value = response.result.value {
                         let json = JSON(value).dictionaryValue
-    
+                            
                         let id = json["id"]!.stringValue
                         let name = json["name"]!.stringValue
                         let phone = json["phone"]!.stringValue
                         let address = json["address"]!.stringValue
                         
-                        let operating_hours = json["operating_hours"]!.arrayValue
                         let services = json["services"]!.arrayValue
                     
-                        
                         let nucleo = Nucleo(id: id, name: name, address: address, phone: phone)
-                        
-                        nucleo.horary = operating_hours.map({ (operatingHour) -> Horary in
-                            let dayOfWeek = operatingHour["day_of_week"].stringValue
-                            let hour = operatingHour["hour"].stringValue
-                            
-                            return Horary(day: dayOfWeek, time: hour)
-                        })
+                        nucleo.email = json["email"]!.stringValue
+                        nucleo.urlSite = json["website"]!.stringValue
                         
                         nucleo.services = services.map({ (service) -> Service in
                             let name = service["name"].stringValue

@@ -46,7 +46,7 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("post_cell") as! PostTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("discovering_cell", forIndexPath: indexPath) as! PostTableViewCell
         
         if let datasource = self.datasource {
             let content = datasource[indexPath.row]
@@ -66,6 +66,18 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
         return UITableViewAutomaticDimension
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if let datasource = datasource, let sourceUrl = datasource[indexPath.row].url {
+            
+            if let url = NSURL(string: sourceUrl) {
+                UIApplication.sharedApplication().openURL(url)
+            }
+            
+        }
+    }
+    
     func retrieveDiscoveringPosts() {
         let requestString = UrlFormatter.urlForNewsFromCategory(Category.Discovering)
         
@@ -76,11 +88,12 @@ class DiscoveringViewController: UIViewController, UITableViewDataSource, UITabl
                     let json: Array<JSON> = JSON(value).arrayValue
                     
                     let posts: [Post] = json.map({ (post) -> Post in
-                        let text = post["text"].stringValue
+                        let text  = post["text"].stringValue
                         let title = post["title"].stringValue
+                        let url   = post["source"].stringValue
                     
                         
-                        return Post(title: title, date: "", text: text)
+                        return Post(title: title, url: url, text: text)
                     })
                     
                     self.datasource = posts

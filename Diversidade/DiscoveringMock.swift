@@ -11,7 +11,7 @@ import Foundation
 class DiscoveringMock {
     
     static func mockDiscoveringData() -> [Post] {
-        let post = Post(title: "Discovering Yourself", date: "12/12/12", text: "Theres some text here. http://www.facebook.com")
+        let post = Post(title: "Discovering Yourself", url: "12/12/12", text: "Theres some text here. http://www.facebook.com")
         
         return [post]
     }
