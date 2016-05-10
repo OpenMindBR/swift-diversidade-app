@@ -28,34 +28,35 @@ Colabore com novas funcionalidades e venha aprimorar essa ferramenta de Cidadani
 
 <p align="left">
   <img src="https://cloud.githubusercontent.com/assets/6030656/14613580/547e0126-0573-11e6-9134-7c4ee64d9922.jpg" width="300"/>
-  <img src="https://cloud.githubusercontent.com/assets/6030656/15159541/8633ce76-16cb-11e6-8419-a9732d4454a1.jpg" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160347/98ba0bf6-16cf-11e6-9d34-1928312b0c00.png" width="300"/>
 </p>
 
 
 **Visualize locais/eventos de apoio à comunidade LGBTT em seu estado.**
 <p align="left">
-  <img src="https://cloud.githubusercontent.com/assets/6030656/15159538/8627b442-16cb-11e6-943d-44e853a2dcee.jpg" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160345/98ae8ba0-16cf-11e6-8fb9-a4091b57157c.png" width="300"/>
 </p>
 
 **Escolha um local/evento e veja mais informções sobre ele**
 <p align="left">
-  <img src="https://cloud.githubusercontent.com/assets/6030656/15159535/8617d220-16cb-11e6-9a67-5d2bd2c9410f.jpg" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160346/98b4233a-16cf-11e6-808b-a8a44fe29c9a.png" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160340/989412de-16cf-11e6-8ba0-af31944cd57a.png" width="300"/>
 </p>
 
 **Descubra que serviços são ofertados pelo local/evento**
 <p align="left">
-  <img src="https://cloud.githubusercontent.com/assets/6030656/15159534/86162e48-16cb-11e6-806f-5421d03f5148.jpg" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160339/9893f9d4-16cf-11e6-91e7-a80a7cbe5139.png" width="300"/>
 </p>
 
 **Visualize e faça comentários sobre um local/evento**
 <p align="left">
-  <img src="https://cloud.githubusercontent.com/assets/6030656/15159531/85fabfe6-16cb-11e6-9c9a-490b24f33edb.jpg" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160341/9896d992-16cf-11e6-8c6b-4a5aaf7ddf51.png" width="300"/>
 </p>
 
 **Veja alguns textos sobre Descobrindo-se LGBTT **
 <p align="left">
-  <img src="https://cloud.githubusercontent.com/assets/6030656/15159532/86113a14-16cb-11e6-9796-1c3cdd20e990.jpg" width="300"/>
-  <img src="https://cloud.githubusercontent.com/assets/6030656/15159533/86156a30-16cb-11e6-9ecc-22d3629b8409.jpg" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160338/9892e8d2-16cf-11e6-9fa5-e8659707f519.png" width="300"/>
+  <img src="https://cloud.githubusercontent.com/assets/6030656/15160342/98a33f70-16cf-11e6-99f6-fb059d3d26fe.png" width="300"/>
 </p>
 
 
