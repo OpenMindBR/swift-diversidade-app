@@ -11,12 +11,12 @@ body {
 
 p {
     font-family: 'Poiret One', cursive;
-    font-size: 20px;
+    font-size: 1.7em;
 }
 
 p.small {
     font-size: 16px;
-}
+}   
 
 a,
 a:hover,
@@ -26,6 +26,7 @@ a.active {
     outline: 0;
     color: #FAFE5C;
 }
+
 
 h1,
 h2,
@@ -81,6 +82,9 @@ header {
     text-align: center;
     color: #fff;
     background-image: url("../img/background.png"); 
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center; 
 }
 
 header .container {
@@ -111,12 +115,12 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        font-size: 8em;
+        font-size: 6em;
     }
 
     header .intro-text .skills {
         font-family: 'Poiret One', cursive;
-        font-size: 2.75em;
+        font-size: 2em;
     }
 }
 
@@ -180,6 +184,25 @@ header .intro-text .skills {
     background-color: #391A90;
 }
 
+.navbar-default .navbar-nav > li > a{
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FAFE5C;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: #f2f2f2;
+    background-color: #13073A;
+    border-radius: 6px;
+    -moz-border-radius: 6px; 
+}
+
+.navbar-default .navbar-brand {
+    color: #FFF
+}
+
 section {
     padding: 100px 0;
 }
@@ -190,17 +213,39 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    color: #FFFFFF;
     background-image: url("../img/background.png")
 }
 
-section.success a,
+section.success p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+section.success a {
+    color: #FFF;
+}
 section.success a:hover,
 section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #FFF;
+    color: #5133a5;
+}
+
+.col-lg-4 h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 1em;
+
+}
+
+.col-lg-4 li {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
 @media(max-width:767px) {
@@ -272,21 +317,50 @@ section.success a.active {
 
 .btn-outline {
     margin-top: 15px;
+    border: solid 1.5px #fc9480;
+    font-size: 20px;
+    color: #fc9480;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:focus{
+    margin-top: 15px;
+    border: solid 1.5px #5133a5;
+    font-size: 20px;
+    color: #5133a5;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline.active {
     border: solid 2px #fff;
+    color: #fc9480;
+    background: #fff;
+}
+
+.btn-outline-footer {
+    margin-top: 15px;
+    border: solid 1.5px #fff;
     font-size: 20px;
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
 
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
+.btn-outline-footer:hover,
+.btn-outline-footer:active,
+.btn-outline-footer:focus,
+.btn-outline-footer.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #5133a5;
     background: #fff;
 }
+
+
 
 .floating-label-form-group {
     position: relative;
@@ -410,14 +484,21 @@ footer .footer-below {
     border: 0;
     border-radius: 0;
     text-align: center;
+
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+
 }
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 4.5em;
+}
+
+.portfolio-modal .modal-content p {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
 }
 
 .portfolio-modal .modal-content img {
